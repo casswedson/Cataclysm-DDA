@@ -5,7 +5,7 @@
     "copy-from": "fake_item",
     "name": { "str": "basecamp charcoal smoker" },
     "description": "A fake charcoal smoker used for basecamps.",
-    "sub": "char_smoker",
+"sub": "char_smoker",
     "ammo": [ "charcoal" ],
     "max_charges": 2000
   },
