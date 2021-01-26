@@ -16,7 +16,7 @@ jobs:
       with:
         fetch-depth: 1
     - name: JSON style check
-      run: make style-json
+      run: git diff --name-only '*.json' | xargs -L 1 json_formatter.cgi
     - name: Display Corrections
       if: failure()
       run: git diff
