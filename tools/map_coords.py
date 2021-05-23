@@ -46,7 +46,7 @@ import re
 
 
 def print_info() -> None:
-    print(
+print(
         """
     The game map is divided in overmaps
     Each overmap is divided in overmap terrain tiles (OTT) in a 180x180 grid
@@ -59,7 +59,7 @@ def print_info() -> None:
 
 def info_map(format: str) -> list:
     mx, cx = [int(n) for n in format.split()[0].split("'")]
-    my, cy = [int(n) for n in format.split()[1].split("'")]
+my, cy = [int(n) for n in format.split()[1].split("'")]
 
     dx = mx * 180 + cx
     dy = my * 180 + cy
