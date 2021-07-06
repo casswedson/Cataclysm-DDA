@@ -172,6 +172,44 @@
     "upgrades": { "age_grow": 120, "into": "mon_cat_mutant_prism" }
   },
   {
+    "id": "mon_cat_weak",
+    "type": "MONSTER",
+    "copy-from": "mon_cat",
+    "name": { "str": "street cat" },
+    "description": "A thin feline covered in fresh wounds and dry dark liquid, almost pinned in place by its injuries and lack of proper nutrition, it will likely be hunted by an opportunistic predator.",
+    "color": "brown",
+    "speed": 20,
+    "dodge": 1,
+    "extend": { "flags": [ "NO_BREED" ] }
+  },
+  {
+    "id": "mon_cat_failed_mutant",
+    "type": "MONSTER",
+    "copy-from": "mon_cat_weak",
+    "name": { "str": "keine augen" },
+    "//": "Keine augen or no eyes in German.",
+    "description": "Disproportional or perhaps inappropriate in every possible way, the anatomy of this once familiar animal seems alien-like compared to other cats, noticeable differences in thickness, texture, and composition can be found along its body.  Slow and weakened, almost dead, makes for easy pray.  Bits of soft tissue are missing, something has been feeding on this.",
+    "default_faction": "mutant",
+    "volume": "3500 ml",
+    "weight": "2500 g",
+    "vision_day": 2,
+    "vision_night": 2,
+    "color": "brown",
+    "dodge": 0,
+    "harvest": "mutant_meatslug"
+  },
+  {
+    "id": "mon_cat_mutant_multilimbed",
+    "type": "MONSTER",
+    "copy-from": "mon_cat_mutant",
+    "name": { "str": "multilimbed cat" },
+    "description": "A mutating feline that has sprouted extra sets of vestigal legs and multiple tails.  Its movements are slow and clumsy.",
+    "color": "brown",
+    "speed": 80,
+    "upgrades": { "half_life": 60, "into_group": "GROUP_FELINE_MUTANT" },
+    "extend": { "flags": [ "NO_BREED", "STUMBLES" ] }
+  },
+  {
     "id": "mon_coyote_mutant_shark",
     "type": "MONSTER",
     "name": { "str": "grinning coyote" },
