@@ -1,6 +1,6 @@
 name: JSON Validation
 
-on: pull_request
+on: [ push, pull_request ]
 
 jobs:
   skip-duplicates:
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        fetch-depth: 1
+        fetch-depth: 2
     - name: JSON style check
       run: make style-json
 
