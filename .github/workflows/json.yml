@@ -29,7 +29,6 @@ jobs:
       run: make style-json
 
     - uses: stefanzweifel/git-auto-commit-action@v4
-      commit_options: '--no-verify --signoff'
       file_pattern: data/*/*.json
 
     - name: Display Corrections
