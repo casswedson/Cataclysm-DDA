@@ -2,6 +2,7 @@
   {
     "type": "MOD_INFO",
     "id": "generic_guns",
+    "//": "hello",
     "name": "Generic Guns",
     "authors": [ "Tonkatsu" ],
     "maintainers": [ "Tonkatsu" ],

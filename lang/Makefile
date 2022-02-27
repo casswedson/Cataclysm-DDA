@@ -1,5 +1,5 @@
 PO_DIR := ./po
-
+#hello
 ifndef LOCALE_DIR
 	MO_DIR := ./mo
 else

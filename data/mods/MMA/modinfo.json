@@ -2,6 +2,7 @@
   {
     "type": "MOD_INFO",
     "id": "MMA",
+    "//": "hello",
     "name": "Mythical Martial Arts",
     "authors": [ "Photoloss" ],
     "maintainers": [ "Hymore246" ],

@@ -2,6 +2,7 @@
   {
     "type": "palette",
     "id": "fbmh_2_rock_palette",
+    "//": "hello",
     "terrain": { ",": "t_dirtfloor", ".": "t_floor", "+": "t_door_c", "v": "t_window_no_curtains", "w": "t_rock_wall" },
     "furniture": {  }
   },

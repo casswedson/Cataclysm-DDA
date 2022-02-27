@@ -1,5 +1,6 @@
 # No Hope
 
+hello
 The mod is based on the old lore where there was a full-scale war with China with many months of preceding marauding and civil disorder. Thus the world with the mod will be much more damaged overall, there will be much less loot etc.
 
 The major goal is to make Cataclysm harder and harsher. To achieve this goal, I decreased loot spawn, made most houses spawn damaged, as well as most cars, and some other changes.
