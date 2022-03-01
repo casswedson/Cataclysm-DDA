@@ -1,4 +1,4 @@
-name: Astyle Lint
+name: Astyle-Lint
 
 on:
   # Trigger the workflow on push or pull request,
@@ -25,7 +25,7 @@ jobs:
         run: sudo apt-get install astyle
 
       - name: Run Astyle
-      - uses: wearerequired/lint-action@v1
+      - uses: casswedson/lint-action@master
         with:
           astyle: true
           astyle_extensions: cpp,h
