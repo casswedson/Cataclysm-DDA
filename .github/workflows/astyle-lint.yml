@@ -19,14 +19,6 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Install node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-
-      - name: Install dependencies
-        run: npm ci
-
       - name: Install dependencies
         run: |
           echo 'installing astyle'
@@ -35,6 +27,7 @@ jobs:
       - name: Run Astyle
         uses: casswedson/lint-action@master
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           astyle: true
           astyle_extensions: cpp,h
           astyle_args: "--options=.astylerc -n"
