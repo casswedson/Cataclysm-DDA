@@ -1,4 +1,4 @@
-name: Astyle
+name: Astyle Auto Linter
 
 on:
   push:
@@ -16,6 +16,7 @@ jobs:
     steps:
       - name: Check out Git repository
       - uses: actions/checkout@v2
+        run: sudo apt-get install astyle
         with:
           fetch-depth: 1
 
@@ -24,7 +25,8 @@ jobs:
 
       - name: Run Astyle
       - uses: casswedson/lint-action@master
+        run: sudo apt-get install astyle
         with:
           astyle: true
-          astyle_extensions: "cpp,h"
+          astyle_extensions: cpp,h
           astyle_args: "--options=.astylerc -n"
