@@ -20,7 +20,9 @@ jobs:
           fetch-depth: 1
 
       - name: Install dependencies
-      - run: sudo apt-get install astyle
+        run: |
+          echo 'installing astyle'
+          sudo apt-get install astyle
 
       - name: Run Astyle
       - uses: casswedson/lint-action@master
