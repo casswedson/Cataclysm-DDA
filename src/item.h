@@ -175,12 +175,7 @@ iteminfo weight_to_info( const std::string &type, const std::string &left,
 
 inline bool is_crafting_component( const item &component );
 
-class item : public visitable
-{
-    public:
-        using FlagsSetType = std::set<flag_id>;
-
-        item();
+class item : public visitable { public: using FlagsSetType = std::set<flag_id>; item();
 
         item( item && ) noexcept( map_is_noexcept );
         item( const item & );
