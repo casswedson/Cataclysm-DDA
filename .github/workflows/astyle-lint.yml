@@ -1,0 +1,32 @@
+name: Astyle Lint
+
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the master branch
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Install dependencies
+      - run: sudo apt-get install astyle
+
+      - name: Run Astyle
+      - uses: casswedson/lint-action@master
+        with:
+          astyle: true
+          astyle_extensions: cpp,h
+          astyle_args: "--options=.astylerc -n"

@@ -160,8 +160,7 @@ struct iteminfo {
          *  @param Flags Additional flags to customize this entry
          *  @param Value Numerical value of this property, -999 for none.
          */
-        iteminfo( const std::string &Type, const std::string &Name, const std::string &Fmt = "",
-                  flags Flags = no_flags, double Value = -999, double UnitVal = 0 );
+        iteminfo( const std::string &Type, const std::string &Name, const std::string &Fmt = "", flags Flags = no_flags, double Value = -999, double UnitVal = 0 );
         iteminfo( const std::string &Type, const std::string &Name, flags Flags );
         iteminfo( const std::string &Type, const std::string &Name, double Value, double UnitVal = 0 );
 };
