@@ -28,6 +28,7 @@ jobs:
         uses: casswedson/lint-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          auto_fix: true
           astyle: true
           astyle_extensions: cpp,h
           astyle_args: "--options=.astylerc -n"
