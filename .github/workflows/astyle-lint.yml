@@ -1,8 +1,6 @@
-name: Astyle-Lint
+name: Astyle
 
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the master branch
   push:
     branches:
       - master
@@ -28,5 +26,5 @@ jobs:
       - uses: casswedson/lint-action@master
         with:
           astyle: true
-          astyle_extensions: cpp,h
+          astyle_extensions: "cpp,h"
           astyle_args: "--options=.astylerc -n"
