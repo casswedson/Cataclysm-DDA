@@ -166,9 +166,7 @@ struct iteminfo {
 };
 
 template<>
-struct enum_traits<iteminfo::flags> {
-    static constexpr bool is_flag_enum = true;
-};
+struct enum_traits<iteminfo::flags> { static constexpr bool is_flag_enum = true; };
 
 iteminfo vol_to_info( const std::string &type, const std::string &left,
                       const units::volume &vol, int decimal_places = 2, bool lower_is_better = true );
