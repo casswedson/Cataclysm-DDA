@@ -16,16 +16,14 @@ jobs:
     steps:
       - name: Check out Git repository
       - uses: actions/checkout@v2
-        run: sudo apt-get install astyle
         with:
           fetch-depth: 1
 
       - name: Install dependencies
-        run: sudo apt-get install astyle
+      - run: sudo apt-get install astyle
 
       - name: Run Astyle
       - uses: casswedson/lint-action@master
-        run: sudo apt-get install astyle
         with:
           astyle: true
           astyle_extensions: cpp,h
