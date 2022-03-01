@@ -22,10 +22,10 @@ jobs:
           fetch-depth: 1
 
       - name: Install dependencies
-      - run: sudo apt-get install astyle
+        run: sudo apt-get install astyle
 
       - name: Run Astyle
-      - uses: casswedson/lint-action@master
+      - uses: wearerequired/lint-action@v1
         with:
           astyle: true
           astyle_extensions: cpp,h
