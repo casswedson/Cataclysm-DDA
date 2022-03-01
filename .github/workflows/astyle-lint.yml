@@ -30,5 +30,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           auto_fix: true
           astyle: true
-          astyle_extensions: cpp,h
-          astyle_args: "--options=.astylerc -n"
+          astyle_args: "--options=.astylerc -X -Q --recursive src/*.cpp,*.h tests/*.cpp,*.h object_creator/*.cpp,*.h"

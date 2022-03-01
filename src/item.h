@@ -160,13 +160,16 @@ struct iteminfo {
          *  @param Flags Additional flags to customize this entry
          *  @param Value Numerical value of this property, -999 for none.
          */
-        iteminfo( const std::string &Type, const std::string &Name, const std::string &Fmt = "", flags Flags = no_flags, double Value = -999, double UnitVal = 0 );
+        iteminfo( const std::string &Type, const std::string &Name, const std::string &Fmt = "",
+                  flags Flags = no_flags, double Value = -999, double UnitVal = 0 );
         iteminfo( const std::string &Type, const std::string &Name, flags Flags );
         iteminfo( const std::string &Type, const std::string &Name, double Value, double UnitVal = 0 );
 };
 
 template<>
-struct enum_traits<iteminfo::flags> { static constexpr bool is_flag_enum = true; };
+struct enum_traits<iteminfo::flags> {
+    static constexpr bool is_flag_enum = true;
+};
 
 iteminfo vol_to_info( const std::string &type, const std::string &left,
                       const units::volume &vol, int decimal_places = 2, bool lower_is_better = true );
@@ -175,7 +178,11 @@ iteminfo weight_to_info( const std::string &type, const std::string &left,
 
 inline bool is_crafting_component( const item &component );
 
-class item : public visitable { public: using FlagsSetType = std::set<flag_id>; item();
+class item : public visitable
+{
+    public:
+        using FlagsSetType = std::set<flag_id>;
+        item();
 
         item( item && ) noexcept( map_is_noexcept );
         item( const item & );
