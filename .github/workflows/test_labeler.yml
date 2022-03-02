@@ -3,7 +3,7 @@ name: Apply Test Labels
 on:
   workflow_run:
     workflows: ["astyle", "JSON Validation", "General build matrix"]
-    types: [completed]
+    types: [success]
 
 jobs:
   labeling:
