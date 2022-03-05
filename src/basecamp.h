@@ -98,9 +98,7 @@ int max_upgrade_by_type( const std::string &type );
 struct basecamp_resource { itype_id fake_id; itype_id ammo_id; int available = 0; int consumed = 0;
 };
 
-struct basecamp_fuel {
-    itype_id ammo_id;
-    int available = 0;
+struct basecamp_fuel { itype_id ammo_id; int available = 0;
 };
 
 struct basecamp_upgrade {
