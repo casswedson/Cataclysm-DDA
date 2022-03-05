@@ -25,6 +25,9 @@
 "Translation":
   - lang/**/*
 
+"Player: Faction Base / Camp":
+  - "**/*basecamp*"
+
 "Mods: Aftershock":
   - data/mods/Aftershock/**/*
   - data/mods/aftershock_exoplanet/**/*
