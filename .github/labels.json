@@ -28,7 +28,10 @@
       "versioning": { "source": "milestones", "type": "SemVer" },
       "prereleaseName": "alpha",
       "sharedConfig": {
+      },
+      "pr": {
         "labels": {
+            "fix": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^fix(\\(.*\\))?(!)?:/i" } ] },
           "balance": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^balance(\\(.*\\))?(!)?:/i" } ] },
           "bug": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^bug(\\(.*\\))?(!)?:/i" } ] },
           "build": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^build(\\(.*\\))?(!)?:/i" } ] },
@@ -62,9 +65,6 @@
           "style": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^style(\\(.*\\))?(!)?:/i" } ] },
           "ui": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^ui(\\(.*\\))?(!)?:/i" } ] }
         }
-      },
-      "pr": {
-        "labels": { "fix": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^fix(\\(.*\\))?(!)?:/i" } ] } }
       }
     }
   ]
