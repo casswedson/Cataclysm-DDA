@@ -31,39 +31,39 @@
         "sharedConfig": {  },
         "pr": {
           "labels": {
-            "fix": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^fix(\\(.*\\))?(!)?:\\//i" } ] },
-            "balance": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^balance(\\(.*\\))?(!)?:\\//i" } ] },
-            "bug": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^bug(\\(.*\\))?(!)?:\\//i" } ] },
-            "build": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^build(\\(.*\\))?(!)?:\\//i" } ] },
-            "chore": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^chore(\\(.*\\))?(!)?:\\//i" } ] },
-            "ci": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^ci(\\(.*\\))?(!)?:\\//i" } ] },
-            "discussion": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^discussion(\\(.*\\))?(!)?:\\//i" } ] },
+            "fix": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^fix(\\(.*\\))?(!)?:\\/i" } ] },
+            "balance": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^balance(\\(.*\\))?(!)?:\\/i" } ] },
+            "bug": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^bug(\\(.*\\))?(!)?:\\/i" } ] },
+            "build": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^build(\\(.*\\))?(!)?:\\/i" } ] },
+            "chore": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^chore(\\(.*\\))?(!)?:\\/i" } ] },
+            "ci": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^ci(\\(.*\\))?(!)?:\\/i" } ] },
+            "discussion": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^discussion(\\(.*\\))?(!)?:\\/i" } ] },
             "documentation": {
               "requires": 1,
               "conditions": [
-                { "type": "titleMatches", "pattern": "/^docs(\\(.*\\))?(!)?:\\//i" },
-                { "type": "titleMatches", "pattern": "/^documentation(\\(.*\\))?(!)?:\\//i" }
+                { "type": "titleMatches", "pattern": "/^docs(\\(.*\\))?(!)?:\\/i" },
+                { "type": "titleMatches", "pattern": "/^documentation(\\(.*\\))?(!)?:\\/i" }
               ]
             },
             "feat": {
               "requires": 1,
               "conditions": [
-                { "type": "titleMatches", "pattern": "/^feat(\\(.*\\))?(!)?:\\//i" },
-                { "type": "titleMatches", "pattern": "/^enhance(\\(.*\\))?(!)?:\\//i" },
-                { "type": "titleMatches", "pattern": "/^feature(\\(.*\\))?(!)?:\\//i" },
-                { "type": "titleMatches", "pattern": "/^enhancement(\\(.*\\))?(!)?:\\//i" }
+                { "type": "titleMatches", "pattern": "/^feat(\\(.*\\))?(!)?:\\/i" },
+                { "type": "titleMatches", "pattern": "/^enhance(\\(.*\\))?(!)?:\\/i" },
+                { "type": "titleMatches", "pattern": "/^feature(\\(.*\\))?(!)?:\\/i" },
+                { "type": "titleMatches", "pattern": "/^enhancement(\\(.*\\))?(!)?:\\/i" }
               ]
             },
             "perf": {
               "requires": 1,
               "conditions": [
-                { "type": "titleMatches", "pattern": "/^perf(\\(.*\\))?(!)?:\\//i" },
-                { "type": "titleMatches", "pattern": "/^performance(\\(.*\\))?(!)?:\\//i" }
+                { "type": "titleMatches", "pattern": "/^perf(\\(.*\\))?(!)?:\\/i" },
+                { "type": "titleMatches", "pattern": "/^performance(\\(.*\\))?(!)?:\\/i" }
               ]
             },
-            "revert": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^revert(\\(.*\\))?(!)?:\\//i" } ] },
-            "style": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^style(\\(.*\\))?(!)?:\\//i" } ] },
-            "ui": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^ui(\\(.*\\))?(!)?:\\//i" } ] }
+            "revert": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^revert(\\(.*\\))?(!)?:\\/i" } ] },
+            "style": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^style(\\(.*\\))?(!)?:\\/i" } ] },
+            "ui": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^ui(\\(.*\\))?(!)?:\\/i" } ] }
           }
         }
       }
