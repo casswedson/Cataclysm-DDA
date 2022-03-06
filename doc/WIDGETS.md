@@ -68,7 +68,6 @@ Widget instances are defined by JSON data, with the main game sidebar widgets an
 adds or modifies widget definitions (see [Modding the sidebar](#modding-the-sidebar)).
 
 For example, here is a widget to display the player character's "Focus" attribute as a number:
-
 ```json
 {
   "id": "focus_num",

@@ -1,51 +1,60 @@
-"C++":
-  - "**/*.cpp"
-  - "**/*.h"
+# enable auto-labeler on issues, prs, or both.
+enable:
+  issues: true
+  prs: true
 
-"Json":
-  - "**/*.json"
+    # Labels is an object where:
+    # - keys are labels
+    # - values are objects of { include: [ pattern ], exclude: [ pattern ] }
+    #    - pattern must be a valid regex, and is applied globally to
+    #      title + description of issues and/or prs (see enabled config above)
+    #    - 'include' patterns will associate a label if any of these patterns match
+    #    - 'exclude' patterns will ignore this label if any of these patterns match
+  labels:
+    '<Bugfix>':
+      include:
+        - '\b^fix(\(.*\))?(!)?:(.*)?\b'
 
-"Python":
-  - "**/*.py"
+    'Game: Balance':
+      include:
+        - '\b^balance(\(.*\))?(!)?:(.*)?\b'
 
-"Documentation":
-  - "**/*.md"
-  - doc/**/*
+    '<Bug>':
+      include:
+        - '\b^bug(\(.*\))?(!)?:(.*)?\b'
 
-"Code: Tooling":
-  - tools/**/*
+    'Code: Build':
+       include:
+         - '\b^build(\(.*\))?(!)?:(.*)?\b'
 
-"Code: Test":
-  - tests/**/*
+    'Chore':
+      include:
+        - '\b^chore(\(.*\))?(!)?:(.*)?\b'
 
-"SDL: Tiles / Sound":
-  - gfx/**/*
-  - sound/**/*
+    'CI':
+      include:
+        - '\b^ci(\(.*\))?(!)?:(.*)?\b'
 
-"Translation":
-  - lang/**/*
+    '<Suggestion / Discussion>':
+      include:
+        - '\b^discussion(\(.*\))?(!)?:(.*)?\b'
 
-"Mods: Aftershock":
-  - data/mods/Aftershock/**/*
-  - data/mods/aftershock_exoplanet/**/*
+    '<Documentation>':
+      include:
+        - '\b^docs(\(.*\))?(!)?:(.*)?\b'
 
-"Mods: Dark Days of the Dead":
-  - data/mods/classic_zombies/**/*
+    '<Enhancement / Feature>':
+      include:
+        - '\b^feat(\(.*\))?(!)?:(.*)?\b'
 
-"Mods: Dark Skies":
-  - data/mods/Dark-Skies-Above/**/*
+    'Code: Performance':
+      include:
+        - '\b^perf(\(.*\))?(!)?:(.*)?\b'
 
-"Mods: Dinoclysm":
-  - data/mods/DinoMod/**/*
+    'Code: Infrastructure, Style, Static Analysis':
+      include:
+        - '\b^style(\(.*\))?(!)?:(.*)?\b'
 
-"Mods: Generic Guns":
-  - data/mods/Generic_Guns/**/*
-
-"Mods: MMA":
-  - data/mods/MMA/**/*
-
-"Mods: Magiclysm":
-  - data/mods/Magiclysm/**/*
-
-"Mods: No Hope":
-  - data/mods/No_Hope/**/*
+    'Info / User Interface':
+      include:
+        - '\b^ui(\(.*\))?(!)?:(.*)?\b'
