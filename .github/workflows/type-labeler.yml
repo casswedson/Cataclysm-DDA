@@ -15,6 +15,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 1
-      - uses: Resnovas/label-mastermind@52a6b15
+      - uses: Resnovas/label-mastermind@52a6b15995cb7e5ac005452fc1a2b4470faca7f7
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
