@@ -45,6 +45,7 @@
 
 # Sidebar Modification
 
+
 Most of the main CDDA sidebar is now moddable, meaning it is data-driven and can be customized
 simply by editing JSON files, without recompiling the game.
 
