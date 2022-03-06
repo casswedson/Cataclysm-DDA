@@ -13,53 +13,48 @@ enable:
   labels:
     '<Bugfix>':
       include:
-        - '/^fix(\\(.*\\))?(!)?:(.*)?/i'
+        - '\b^fix(\(.*\))?(!)?:(.*)?\b'
 
     'Game: Balance':
       include:
-        - '/^balance(\\(.*\\))?(!)?(.*)?:/i'
+        - '\b^balance(\(.*\))?(!)?:(.*)?\b'
 
     '<Bug>':
       include:
-        - '/^bug(\\(.*\\))?(!)?:(.*)?/i'
+        - '\b^bug(\(.*\))?(!)?:(.*)?\b'
 
     'Code: Build':
        include:
-         - '/^build(\\(.*\\))?(!)?:(.*)?/i'
+         - '\b^build(\(.*\))?(!)?:(.*)?\b'
 
     'Chore':
       include:
-        - '/^chore(\\(.*\\))?(!)?:(.*)?/i'
+        - '\b^chore(\(.*\))?(!)?:(.*)?\b'
 
     'CI':
       include:
-        - '/^ci(\\(.*\\))?(!)?:(.*)?/i'
+        - '\b^ci(\(.*\))?(!)?:(.*)?\b'
 
     '<Suggestion / Discussion>':
       include:
-        - '/^discussion(\\(.*\\))?(!)?:(.*)?/i'
+        - '\b^discussion(\(.*\))?(!)?:(.*)?\b'
 
     '<Documentation>':
       include:
-        - '/^docs(\\(.*\\))?(!)?:(.*)?/i'
-        - '/^documentation(\\(.*\\))?(!)?:(.*)?/i'
+        - '\b^docs(\(.*\))?(!)?:(.*)?\b'
 
     '<Enhancement / Feature>':
       include:
-        - '/^feat(\\(.*\\))?(!)?:(.*)?/i'
-        - '/^enhance(\\(.*\\))?(!)?:(.*)?/i'
-        - '/^feature(\\(.*\\))?(!)?:(.*)?/i'
-        - '/^enhancement(\\(.*\\))?(!)?:(.*)?/i'
+        - '\b^feat(\(.*\))?(!)?:(.*)?\b'
 
     'Code: Performance':
       include:
-        - '/^perf(\\(.*\\))?(!)?:(.*)?/i'
-        - '/^performance(\\(.*\\))?(!)?:(.*)?/i'
+        - '\b^perf(\(.*\))?(!)?:(.*)?\b'
 
     'Code: Infrastructure, Style, Static Analysis':
       include:
-        - '/^style(\\(.*\\))?(!)?:(.*)?/i'
+        - '\b^style(\(.*\))?(!)?:(.*)?\b'
 
     'Info / User Interface':
       include:
-        - '/^ui(\\(.*\\))?(!)?:(.*)?/i'
+        - '\b^ui(\(.*\))?(!)?:(.*)?\b'

@@ -8,8 +8,15 @@ on:
 jobs:
   labeler:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: read|write
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
     - name: Label by type
       id: labeler
       uses: jimschubert/labeler-action@v1
