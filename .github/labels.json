@@ -1,27 +1,27 @@
 [
   {
     "labels": {
-      "balance": { "name": "Game: Balance", "colour": "#03045e", "description": "Code that balances in-game features" },
-      "bug": { "name": "<Bug>", "colour": "#dc2323", "description": "This needs to be fixed" },
-      "build": { "name": "Code: Build", "colour": "#0077b6", "description": "Regarding different builds and build environments" },
+      "balance": { "name": "Game: Balance", "color": "#03045e", "description": "Code that balances in-game features" },
+      "bug": { "name": "<Bug>", "color": "#dc2323", "description": "This needs to be fixed" },
+      "build": { "name": "Code: Build", "color": "#0077b6", "description": "Regarding different builds and build environments" },
       "documentation": { "name": "<Documentation>", "color": "#ade8f4", "description": "Design documents, internal info, guides and help" },
       "chore": { "name": "Chore", "color": "#0077b6", "description": "Updating grunt tasks etc; no production code change" },
-      "ci": { "name": "CI", "colour": "#0077b6", "description": "Related to automation for build, test, and release" },
+      "ci": { "name": "CI", "color": "#0077b6", "description": "Related to automation for build, test, and release" },
       "discussion": {
         "name": "<Suggestion / Discussion>",
-        "colour": "#0077b6",
+        "color": "#0077b6",
         "description": "Related to automation for build, test, and release"
       },
-      "feat": { "name": "<Enhancement / Feature>", "colour": "#ade8f4", "description": "New feature or enhancement on existing" },
-      "fix": { "name": "<Bugfix>", "colour": "#80b918", "description": "This is a bug fix (or closes an open issue)" },
-      "perf": { "name": "Code: Performance", "colour": "#80b918", "description": "New feature or enhancement on existing" },
+      "feat": { "name": "<Enhancement / Feature>", "color": "#ade8f4", "description": "New feature or enhancement on existing" },
+      "fix": { "name": "<Bugfix>", "color": "#80b918", "description": "This is a bug fix (or closes an open issue)" },
+      "perf": { "name": "Code: Performance", "color": "#80b918", "description": "New feature or enhancement on existing" },
       "revert": { "name": "Revert", "color": "#80b918", "description": "Removes & discards a previous change as error" },
       "style": {
         "name": "Code: Infrastructure, Style, Static Analysis",
-        "colour": "#643047",
+        "color": "#643047",
         "description": "Code Infrastructure and style"
       },
-      "ui": { "name": "Info / User Interface", "colour": "#ade8f4", "description": "Game - player communication, menus, etc" }
+      "ui": { "name": "Info / User Interface", "color": "#ade8f4", "description": "Game - player communication, menus, etc" }
     },
     "runners": [
       {
