@@ -1,191 +1,71 @@
 {
-    "labels": {
-        "balance": {
-            "name": "Game: Balance",
-            "colour": "#03045e",
-            "description": "Code that balances in-game features"
-        },
-        "bug": {
-            "name": "<Bug>",
-            "colour": "#dc2323",
-            "description": "This needs to be fixed"
-        },
-        "build": {
-            "name": "Code: Build",
-            "colour": "#0077b6",
-            "description": "Regarding different builds and build environments"
-        },
-        "documentation": {
-            "name": "<Documentation>",
-            "color": "#ade8f4",
-            "description": "Design documents, internal info, guides and help"
-        },
-        "chore": {
-            "name": "Chore",
-            "color": "#0077b6",
-            "description": "Updating grunt tasks etc; no production code change"
-        },
-        "ci": {
-            "name": "CI",
-            "colour": "#0077b6",
-            "description": "Related to automation for build, test, and release"
-        },
-        "discussion": {
-            "name": "<Suggestion / Discussion>",
-            "colour": "#0077b6",
-            "description": "Related to automation for build, test, and release"
-        },
-        "feat": {
-            "name": "<Enhancement / Feature>",
-            "colour": "#ade8f4",
-            "description": "New feature or enhancement on existing"
-        },
-        "fix": {
-            "name": "<Bugfix>",
-            "colour": "#80b918",
-            "description": "This is a bug fix (or closes an open issue)"
-        },
-        "perf": {
-            "name": "Code: Performance",
-            "colour": "#80b918",
-            "description": "New feature or enhancement on existing"
-        },
-        "revert": {
-            "name": "Revert",
-            "color": "#80b918",
-            "description": "Removes & discards a previous change as error"
-        },
-        "style": {
-            "name": "Code: Infrastructure, Style, Static Analysis",
-            "colour": "#643047",
-            "description": "Code Infrastructure and style"
-        },
-        "ui": {
-            "name": "Info / User Interface",
-            "colour": "#ade8f4",
-            "description": "Game - player communication, menus, etc"
-        }
+  "labels": {
+    "balance": { "name": "Game: Balance", "colour": "#03045e", "description": "Code that balances in-game features" },
+    "bug": { "name": "<Bug>", "colour": "#dc2323", "description": "This needs to be fixed" },
+    "build": { "name": "Code: Build", "colour": "#0077b6", "description": "Regarding different builds and build environments" },
+    "documentation": { "name": "<Documentation>", "color": "#ade8f4", "description": "Design documents, internal info, guides and help" },
+    "chore": { "name": "Chore", "color": "#0077b6", "description": "Updating grunt tasks etc; no production code change" },
+    "ci": { "name": "CI", "colour": "#0077b6", "description": "Related to automation for build, test, and release" },
+    "discussion": {
+      "name": "<Suggestion / Discussion>",
+      "colour": "#0077b6",
+      "description": "Related to automation for build, test, and release"
     },
-    "runners": [{
-        "root": ".",
-        "versioning": {
-            "source": "milestones",
-            "type": "SemVer"
-        },
-        "prereleaseName": "alpha",
-        "sharedConfig": {
-            "labels": {
-                "balance": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^balance(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "bug": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^bug(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "build": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^build(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "chore": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^chore(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "ci": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^ci(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "discussion": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^discussion(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "documentation": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^docs(\\(.*\\))?(!)?:/i"
-                    }, {
-                    "type": "titleMatches",
-                    "pattern": "/^documentation(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "feat": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^feat(\\(.*\\))?(!)?:/i"
-                    }, {
-                    "type": "titleMatches",
-                    "pattern": "/^enhance(\\(.*\\))?(!)?:/i"
-                    }, {
-                    "type": "titleMatches",
-                    "pattern": "/^feature(\\(.*\\))?(!)?:/i"
-                    }, {
-                    "type": "titleMatches",
-                    "pattern": "/^enhancement(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "perf": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^perf(\\(.*\\))?(!)?:/i"
-                    }, {
-                    "type": "titleMatches",
-                    "pattern": "/^performance(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "revert": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^revert(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "style": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^style(\\(.*\\))?(!)?:/i"
-                    }]
-                },
-                "ui": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^ui(\\(.*\\))?(!)?:/i"
-                    }]
-                }
-            }
-        },
-        "pr": {
-            "labels": {
-                "fix": {
-                    "requires": 1,
-                    "conditions": [{
-                        "type": "titleMatches",
-                        "pattern": "/^fix(\\(.*\\))?(!)?:/i"
-                    }]
-                }
-            }
+    "feat": { "name": "<Enhancement / Feature>", "colour": "#ade8f4", "description": "New feature or enhancement on existing" },
+    "fix": { "name": "<Bugfix>", "colour": "#80b918", "description": "This is a bug fix (or closes an open issue)" },
+    "perf": { "name": "Code: Performance", "colour": "#80b918", "description": "New feature or enhancement on existing" },
+    "revert": { "name": "Revert", "color": "#80b918", "description": "Removes & discards a previous change as error" },
+    "style": {
+      "name": "Code: Infrastructure, Style, Static Analysis",
+      "colour": "#643047",
+      "description": "Code Infrastructure and style"
+    },
+    "ui": { "name": "Info / User Interface", "colour": "#ade8f4", "description": "Game - player communication, menus, etc" }
+  },
+  "runners": [
+    {
+      "root": ".",
+      "versioning": { "source": "milestones", "type": "SemVer" },
+      "prereleaseName": "alpha",
+      "sharedConfig": {
+        "labels": {
+          "balance": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^balance(\\(.*\\))?(!)?:/i" } ] },
+          "bug": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^bug(\\(.*\\))?(!)?:/i" } ] },
+          "build": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^build(\\(.*\\))?(!)?:/i" } ] },
+          "chore": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^chore(\\(.*\\))?(!)?:/i" } ] },
+          "ci": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^ci(\\(.*\\))?(!)?:/i" } ] },
+          "discussion": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^discussion(\\(.*\\))?(!)?:/i" } ] },
+          "documentation": {
+            "requires": 1,
+            "conditions": [
+              { "type": "titleMatches", "pattern": "/^docs(\\(.*\\))?(!)?:/i" },
+              { "type": "titleMatches", "pattern": "/^documentation(\\(.*\\))?(!)?:/i" }
+            ]
+          },
+          "feat": {
+            "requires": 1,
+            "conditions": [
+              { "type": "titleMatches", "pattern": "/^feat(\\(.*\\))?(!)?:/i" },
+              { "type": "titleMatches", "pattern": "/^enhance(\\(.*\\))?(!)?:/i" },
+              { "type": "titleMatches", "pattern": "/^feature(\\(.*\\))?(!)?:/i" },
+              { "type": "titleMatches", "pattern": "/^enhancement(\\(.*\\))?(!)?:/i" }
+            ]
+          },
+          "perf": {
+            "requires": 1,
+            "conditions": [
+              { "type": "titleMatches", "pattern": "/^perf(\\(.*\\))?(!)?:/i" },
+              { "type": "titleMatches", "pattern": "/^performance(\\(.*\\))?(!)?:/i" }
+            ]
+          },
+          "revert": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^revert(\\(.*\\))?(!)?:/i" } ] },
+          "style": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^style(\\(.*\\))?(!)?:/i" } ] },
+          "ui": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^ui(\\(.*\\))?(!)?:/i" } ] }
         }
-    }]
+      },
+      "pr": {
+        "labels": { "fix": { "requires": 1, "conditions": [ { "type": "titleMatches", "pattern": "/^fix(\\(.*\\))?(!)?:/i" } ] } }
+      }
+    }
+  ]
 }
