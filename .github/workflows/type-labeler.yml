@@ -1,0 +1,17 @@
+name: Type Labeler
+on: 
+  issues:
+    types: [opened, edited, synchronize]
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  labeler:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Label by type
+      id: labeler
+      uses: jimschubert/labeler-action@v1
+      with:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
