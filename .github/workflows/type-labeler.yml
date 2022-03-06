@@ -1,0 +1,19 @@
+# use the <type> of pr and issue title to label them
+# https://www.conventionalcommits.org/en/v1.0.0/
+# configuration file ./.github/labels.json
+on:
+  issues:
+    types: [opened, edited, closed, reopened]
+  pull_request:
+    types: [opened, edited, closed, reopened, synchronize]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - uses: Resnovas/label-mastermind@master
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
