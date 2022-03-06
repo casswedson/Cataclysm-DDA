@@ -18,4 +18,6 @@ jobs:
       - uses: Resnovas/label-mastermind@2.1.3
         name: Label issues and pull requests
         with:
+          skipDelete: true
+          fillEmpty: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
