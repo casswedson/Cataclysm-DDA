@@ -84,8 +84,7 @@
 #include "name.h"
 
 
-static const efftype_id effect_bouldering( "bouldering" );
-static const efftype_id effect_contacts( "contacts" );
+static const efftype_id effect_bouldering( "bouldering" ); static const efftype_id effect_contacts( "contacts" );
 static const efftype_id effect_controlled( "controlled" );
 static const efftype_id effect_drunk( "drunk" );
 static const efftype_id effect_high( "high" );

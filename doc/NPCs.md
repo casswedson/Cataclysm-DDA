@@ -6,6 +6,7 @@ There are two parts to creating a new NPC, apart from any dialogue you may want 
 #### NPC Class
 First there is the `npc_class` which follows the following template.
 Format:
+
 ```json
 {
   "type": "npc_class",
