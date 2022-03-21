@@ -11,12 +11,21 @@
 "<Documentation>":
   - "**/*.md"
   - doc/**/*
+  - doxygen_doc/**/*
 
 "Code: Tooling":
   - tools/**/*
+  - .github/**/*
+  - utilities/**/*
 
 "Code: Tests":
   - tests/**/*
+
+"Code: Build":
+  - build-data/**/*
+  - build-scripts/**/*
+  - "**/CMakeLists.txt"
+  - "**/*.cmake"
 
 "NPC / Factions":
   - data/json/npcs/**/*
