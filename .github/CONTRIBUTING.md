@@ -24,7 +24,6 @@ editor such as [Notepad++](https://notepad-plus-plus.org/).
 ## Contributing to GitHub
 
 Contributing to Cataclysm: Dark Days Ahead is easy — simply fork the repository here on GitHub, make your changes, and then send us a pull request.
-
 There are a couple of guidelines we suggest sticking to:
 
 * Add this repository as an `upstream` remote.

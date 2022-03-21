@@ -3,7 +3,6 @@
 # pylint: disable=C0301
 """Convert a Cataclysm-DDA tileset to isometric view.
 Run this script with -h for full usage information.
-
 Examples:
 
     %(prog)s gfx/UltimateCataclysm
