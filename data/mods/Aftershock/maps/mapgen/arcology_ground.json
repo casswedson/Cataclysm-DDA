@@ -4,7 +4,7 @@
     "method": "json",
     "om_terrain": [ "arcology_exterior_nw_corner_uplifts", "arcology_exterior_nw_corner_robots" ],
     "weight": 100,
-    "//": "Arcology general principles.  Ground floor will be mostly shops and the like.  Living quarters and administration/white collar goes up.  Manufacturing and secure locations go down. Mostly filled with nested chunks respecting hallways. Stairs and elevators are in center generally.  Make separate specials that have unique locations inside of them.",
+    "//": "Arcology general principles. Ground floor will be mostly shops and the like.  Living quarters and administration/white collar goes up.  Manufacturing and secure locations go down. Mostly filled with nested chunks respecting hallways. Stairs and elevators are in center generally.  Make separate specials that have unique locations inside of them.",
     "//2": "There 19 rows vertically and 16 horizontally inside the walls this tile. This will house 2 8x8 nested chunks.",
     "//3": "Once dev master becomes 0.F experimental convert reinforced glass to whatever glass we are using for prepnet orchard.",
     "object": {
