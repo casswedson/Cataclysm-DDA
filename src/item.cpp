@@ -13430,7 +13430,6 @@ bool item::empty() const
 {
     return contents.empty();
 }
-
 bool item::empty_container() const
 {
     return contents.empty_container();
