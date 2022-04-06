@@ -6,7 +6,7 @@
     "door": "t_door_metal_locked",
     "floor": "t_floor",
     "walls": [
-      "t_wall",
+      "t_wall_r",
       "t_wall_r",
       "t_wall_w",
       "t_wall_b",
