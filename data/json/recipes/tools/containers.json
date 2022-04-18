@@ -1,7 +1,6 @@
 [
   {
-    "type": "recipe",
-    "activity_level": "LIGHT_EXERCISE",
+    "type": "recipe", "activity_level": "LIGHT_EXERCISE",
     "result": "waterskin",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_CONTAINERS",
