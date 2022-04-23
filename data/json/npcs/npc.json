@@ -2,8 +2,7 @@
   {
     "type": "npc",
     "id": "thug",
-    "//": "Generic melee focused guard for the Hell's Raiders faction.",
-    "name_suffix": "Thug",
+    "//": "Generic melee focused guard for the Hell's Raiders faction.", "name_suffix": "Thug",
     "class": "NC_THUG",
     "attitude": 0,
     "mission": 8,
