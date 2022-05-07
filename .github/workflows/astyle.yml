@@ -1,6 +1,6 @@
 name: astyle
 
-on: pull_request
+on: pull_request_target
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
