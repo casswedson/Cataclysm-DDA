@@ -214,11 +214,7 @@ light_emission nolight = {0, 0, 0};
 
 // Returns the default item type, used for the null item (default constructed),
 // the returned pointer is always valid, it's never cleared by the @ref Item_factory.
-static const itype *nullitem()
-{
-    static itype nullitem_m;
-    return &nullitem_m;
-}
+static const itype *nullitem() { static itype nullitem_m; return &nullitem_m; }
 
 item &null_item_reference()
 {
