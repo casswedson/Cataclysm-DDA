@@ -6,6 +6,9 @@ Cataclysm: Dark Days Ahead is a turn-based survival game set in a post-apocalypt
     <img src="https://repology.org/badge/vertical-allrepos/cataclysm-dda.svg" alt="Packaging Status" align="right">
 </a>
 
+
+
+
 [![Build Status](https://travis-ci.org/CleverRaven/Cataclysm-DDA.svg?branch=master)](https://travis-ci.org/CleverRaven/Cataclysm-DDA)
 [![Coverage Status](https://coveralls.io/repos/github/CleverRaven/Cataclysm-DDA/badge.svg?branch=master)](https://coveralls.io/github/CleverRaven/Cataclysm-DDA?branch=master)
 [![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/CleverRaven/Cataclysm-DDA.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/CleverRaven/Cataclysm-DDA/context:cpp)
