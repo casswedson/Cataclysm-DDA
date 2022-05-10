@@ -2,12 +2,15 @@
 name: "Pull Tileset Updates"
 
 on:
-  schedule:
-    - cron: "0 23 * * sun"
+  push:
+    branches:
+      - master
+  # schedule:
+  #   - cron: "0 23 * * sun"
 
 jobs:
   pull-updates:
-    if: github.repository == 'CleverRaven/Cataclysm-DDA'
+    if: github.repository == 'casswedson/Cataclysm-DDA'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,9 +20,12 @@ jobs:
         with:
           format: 'YYYY-MM-DD'
       - name: "Update Tilesets"
+        shell: bash
         run: |
           curl -s https://api.github.com/repos/I-am-Erk/CDDA-Tilesets/releases/latest | grep "browser_download_url.*zip" | cut -d : -f 2,3 | tr -d \" | wget -P gfx -i -
           find gfx/ -name "*.zip" | xargs -I{} unzip -o {} -d gfx/
+          make tools/format/json_formatter.cgi
+          find gfx/ -name "*.json" -print0 | xargs -0 -L 1 -P $(nproc) tools/format/json_formatter.cgi
           rm -fr gfx/*.zip
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
