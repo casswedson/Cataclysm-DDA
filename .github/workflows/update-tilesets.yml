@@ -28,8 +28,8 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           commit-message: |
-            Routine Tileset updates on ${{ steps.get-timestamp.outputs.time }}
-            Co-authored-by: Fris0uman <41293484+Fris0uman@users.noreply.github.com> 
+            Routine Tileset updates on ${{ steps.get-timestamp.outputs.time }} >
+            Co-authored-by: Fris0uman <41293484+Fris0uman@users.noreply.github.com>
           committer: casswedson <casswedson@users.noreply.github.com>
           author: casswedson <casswedson@users.noreply.github.com>
           branch: tileset-updates
