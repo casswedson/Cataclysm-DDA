@@ -5,7 +5,7 @@
   "tiles-new": [
     {
       "file": "overmap.png",
-      "//": "range 1 to 287",
+      "//": "range 1 to 303",
       "tiles": [
         { "id": "generic_city_building_no_sidewalk", "fg": 266 },
         { "id": "park", "fg": 167 },
@@ -2543,7 +2543,7 @@
         { "id": "cave_rat", "fg": 51 },
         { "id": "hive", "fg": 118 },
         { "id": "spider_pit", "fg": 240 },
-        { "id": "spider_pit_under", "fg": 279 },
+        { "id": "spider_pit_under", "fg": 289 },
         { "id": "slimepit", "fg": 181 },
         { "id": "slimepit_down", "fg": 181 },
         { "id": "triffid_grove", "fg": 24 },
@@ -4605,6 +4605,7 @@
         { "id": "ws_biker_dump_3_3", "fg": 111 },
         { "id": "lake_shore", "fg": 278 },
         { "id": "lake_surface", "fg": 277 },
+        { "id": "clear", "fg": 245 },
         { "id": [ "dirt_road", "dirt_road_forest" ], "fg": [ 65, 64, 65, 64 ], "rotates": true },
         { "id": [ "dirt_road_3way", "dirt_road_3way_forest" ], "fg": [ 71, 70, 72, 73 ], "rotates": true },
         { "id": "dirt_road_turn_forest", "fg": [ 60, 62, 63, 61 ], "rotates": true },
@@ -4661,21 +4662,31 @@
         { "id": "mission_cursor", "fg": 155 },
         { "id": "parking_light_blue", "fg": 173 },
         { "id": "two_story_light_green", "fg": 267 },
-        { "id": "unknown_terrain", "fg": 269 }
+        { "id": "unknown_terrain", "fg": 269 },
+        { "id": "drizzle", "fg": 279 },
+        { "id": "flurries", "fg": 280 },
+        { "id": "light_drizzle", "fg": 281 },
+        { "id": "lightning", "fg": 282 },
+        { "id": "rain", "fg": 283 },
+        { "id": "snowing", "fg": 284 },
+        { "id": "snowstorm", "fg": 285 },
+        { "id": "sunny", "fg": 286 },
+        { "id": "thunder", "fg": 287 },
+        { "id": "cloudy", "fg": 288 }
       ]
     },
     {
       "file": "overmap_tall.png",
-      "//": "range 288 to 303",
+      "//": "range 304 to 319",
       "sprite_width": 16,
       "sprite_height": 20,
       "sprite_offset_x": 0,
       "sprite_offset_y": -4,
       "tiles": [
-        { "id": "overmap_horde_3", "fg": 288, "rotates": false },
-        { "id": "overmap_horde_4", "fg": 289, "rotates": false },
-        { "id": "overmap_horde_5", "fg": 290, "rotates": false },
-        { "id": "overmap_horde_6", "fg": 291, "rotates": false }
+        { "id": "overmap_horde_3", "fg": 304, "rotates": false },
+        { "id": "overmap_horde_4", "fg": 305, "rotates": false },
+        { "id": "overmap_horde_5", "fg": 306, "rotates": false },
+        { "id": "overmap_horde_6", "fg": 307, "rotates": false }
       ]
     },
     {
