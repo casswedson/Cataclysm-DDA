@@ -1031,7 +1031,7 @@
     "type": "SPELL",
     "id": "swirling_vortex",
     "name": { "str": "Swirling Vortex" },
-    "description": "Sends the victim to the entrance.",
+    "description": "Sends the to the entrance.",
     "valid_targets": [ "self", "hostile", "ally" ],
     "max_level": 1,
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
