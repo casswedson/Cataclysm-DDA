@@ -18,6 +18,9 @@ on:
       - 'README*'
       - 'src/**'
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   release:
     name: Create Release
@@ -54,6 +57,15 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           custom_tag: ${{ steps.generate_env_vars.outputs.tag_name }}
           tag_prefix: ""
+      - name: "Generate release notes"
+        run: |
+          gh api \
+            --method POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            /repos/casswedson/Cataclysm-DDA/releases/generate-notes \
+            -f tag_name='${{ steps.generate_env_vars.outputs.tag_name }}' \
+            -f target_commitish='master' \
+            -q .body > CHANGELOG.md
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
