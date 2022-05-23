@@ -2,15 +2,17 @@
 name: "Pull Tileset Updates"
 
 on:
-  schedule:
-    - cron: "0 23 * * sun"
+  push:
+    branches:
+      - master
+  # schedule:
+  #   - cron: "0 23 * * sun"
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   pull-updates:
-    if: github.repository == 'CleverRaven/Cataclysm-DDA'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -39,6 +41,7 @@ jobs:
             Routine Tileset updates on ${{ steps.get-timestamp.outputs.time }}
           committer: casswedson <casswedson@users.noreply.github.com>
           author: casswedson <casswedson@users.noreply.github.com>
+          token: $GITHUB_TOKEN
           branch: tileset-updates
           delete-branch: true
           base: master
