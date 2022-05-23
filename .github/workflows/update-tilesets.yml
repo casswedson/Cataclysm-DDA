@@ -41,7 +41,7 @@ jobs:
             Routine Tileset updates on ${{ steps.get-timestamp.outputs.time }}
           committer: casswedson <casswedson@users.noreply.github.com>
           author: casswedson <casswedson@users.noreply.github.com>
-          token: $GITHUB_TOKEN
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: tileset-updates
           delete-branch: true
           base: master
