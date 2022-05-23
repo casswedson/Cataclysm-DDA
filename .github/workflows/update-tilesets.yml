@@ -43,7 +43,6 @@ jobs:
             Routine Tileset updates on ${{ steps.current-date.outputs.formattedTime }}
           committer: casswedson <casswedson@users.noreply.github.com>
           author: casswedson <casswedson@users.noreply.github.com>
-          token: ${{ secrets.TX_PR_CREATOR }}
           branch: tileset-updates
           delete-branch: true
           base: master
