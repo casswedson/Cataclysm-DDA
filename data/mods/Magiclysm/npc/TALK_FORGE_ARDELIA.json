@@ -2,7 +2,6 @@
   {
     "type": "npc",
     "id": "forge_lord_librarian",
-    "//": "The Librarian of the Forge of Wonders.",
     "name_unique": "Librarian, A",
     "name_suffix": "Forge Lord",
     "class": "NC_FORGE_LORD_LIBRARIAN",

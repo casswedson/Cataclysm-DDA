@@ -2,7 +2,6 @@
   {
     "type": "npc",
     "id": "forge_lord_reagents",
-    "//": "The Pirate of the Forge of Wonders.",
     "name_unique": "Helen Tavrel, Former Pirate",
     "name_suffix": "Forge Lord",
     "class": "NC_FORGE_LORD_REAGENT",
