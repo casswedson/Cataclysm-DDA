@@ -14,7 +14,8 @@ jobs:
       uses: fkirc/skip-duplicate-actions@master
       with:
         cancel_others: 'true'
-        paths: '[".github/workflows/astyle.yml", "Makefile", ".astylerc", "**.cpp", "**.h", "**.c"]'
+        # paths: '[".github/workflows/astyle.yml", "Makefile", ".astylerc", "**.cpp", "**.h", "**.c"]'
+        paths: '[ "**.cpp", "**.h", "**.c", "**/Makefile", "**/.astylerc", "**/astyle.yml" ]'
     - run: echo ${{ github.event.number }} > pull_request_id
     - uses: actions/upload-artifact@v2
       with:
