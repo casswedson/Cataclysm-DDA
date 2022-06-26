@@ -5,9 +5,7 @@ a tile_config.json and tilesheet .png file(s) ready for use in CDDA.
 
 Examples:
 
-    %(prog)s ../CDDA-Tilesets/gfx/Retrodays/
-    %(prog)s --use-all ../CDDA-Tilesets/gfx/UltimateCataclysm/
-
+    %(prog)s ../CDDA-Tilesets/gfx/Retrodays/ %(prog)s --use-all ../CDDA-Tilesets/gfx/UltimateCataclysm/
 By default, output is written back to the source directory. Pass an output
 directory as the last argument to place output files there instead. The
 output directory will be created if it does not already exist.
