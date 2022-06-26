@@ -21,6 +21,7 @@ jobs:
       uses: fkirc/skip-duplicate-actions@master
       with:
         cancel_others: 'true'
+        concurrent_skipping: "always"
         paths: '[".github/workflows/astyle.yml", "**/Makefile", "**/.astylerc", "**.cpp", "**.h", "**.c"]'
 
   astyle-code:

@@ -21,8 +21,8 @@ jobs:
       uses: fkirc/skip-duplicate-actions@master
       with:
         cancel_others: 'true'
+        concurrent_skipping: "always"
         paths: '["**.json", ".github/workflows/json.yml"]'
-
   style-json:
     name: JSON style check
 
