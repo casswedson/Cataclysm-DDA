@@ -10,6 +10,7 @@ jobs:
     outputs:
       should_skip: ${{ steps.skip_check.outputs.should_skip }}
     steps:
+    - uses: actions/checkout@v3
     - run: echo ${{ github.event.number }} > pull_request_id
     - uses: actions/upload-artifact@v2
       with:
