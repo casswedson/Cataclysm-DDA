@@ -4,7 +4,6 @@ Merge all tile entries and PNGs in a compositing tileset directory into
 a tile_config.json and tilesheet .png file(s) ready for use in CDDA.
 
 Examples:
-
     %(prog)s ../CDDA-Tilesets/gfx/Retrodays/
     %(prog)s --use-all ../CDDA-Tilesets/gfx/UltimateCataclysm/
 
