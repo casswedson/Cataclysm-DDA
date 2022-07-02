@@ -60,10 +60,7 @@ generic_factory<achievement> achievement_factory( "achievement" );
 
 /** @relates string_id */
 template<>
-const achievement &string_id<achievement>::obj() const
-{
-    return achievement_factory.obj( *this );
-}
+const achievement &string_id<achievement>::obj() const { return achievement_factory.obj( *this ); }
 
 /** @relates string_id */
 template<>
