@@ -45,3 +45,9 @@ jobs:
     - name: Display Corrections
       if: failure()
       run: git diff
+
+    - name: 'Use corrections as a review'
+      uses: getsentry/action-git-diff-suggestions@main
+      if: failure()
+      with:
+        message: 'This pull request contains style errors, astyle made the following correction'
