@@ -36,3 +36,9 @@ jobs:
     - name: Display Corrections
       if: failure()
       run: git diff
+
+    - name: 'Use corrections as a review'
+      uses: getsentry/action-git-diff-suggestions@main
+      if: failure()
+      with:
+        message: 'This pull request does not comply with our style guidelines, JSON Validator made the following correction'
