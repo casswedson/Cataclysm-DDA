@@ -30,11 +30,7 @@
     "components": [
       [ [ "water", 10 ], [ "water_clean", 10 ] ],
       [ [ "wax", 2 ], [ "any_tallow", 8, "LIST" ], [ "vinegar", 10 ], [ "pine_bough", 20 ] ],
-      [ [ "salt", 50 ] ],
-      [ [ "armor_larmor", 1 ] ],
-      [ [ "armguard_larmor", 1 ] ]
-    ]
-  },
+      [ [ "salt", 50 ] ], [ [ "armor_larmor", 1 ] ], [ [ "armguard_larmor", 1 ] ] ] },
   {
     "result": "armor_chitin",
     "type": "recipe",
