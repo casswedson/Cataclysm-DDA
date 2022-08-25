@@ -37,8 +37,6 @@
       { "x": 2, "y": -1, "part": "wheel_armor" },
       { "x": 2, "y": 0, "parts": [ "hdframe_horizontal_2", "hdhalfboard_horizontal" ] },
       { "x": 2, "y": 0, "parts": [ "plating_steel", "headlight_reinforced" ] },
-      { "x": 2, "y": 1, "parts": [ "hdframe_horizontal_2", "hdhalfboard_horizontal" ] },
-      { "x": 2, "y": 1, "part": "plating_steel" },
       { "x": 2, "y": 2, "parts": [ "hdframe_horizontal_2", "hdhalfboard_horizontal" ] },
       { "x": 2, "y": 2, "parts": [ "plating_steel", "headlight_reinforced" ] },
       { "x": 2, "y": 3, "parts": [ "hdframe_vertical_T_right", "hdhalfboard_ne" ] },
