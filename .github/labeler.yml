@@ -226,4 +226,4 @@
   - "**/weather**"
 
 "Vehicles":
-  - "**/vehicle**"
+  - "**/vehicle*"
