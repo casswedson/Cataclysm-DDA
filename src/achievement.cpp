@@ -518,7 +518,7 @@ static std::string format_requirements( const std::vector<cata::optional<std::st
         }
     }
     if( some_missing && !result.empty() ) {
-        result += colorize( _( "  (further requirements hidden)" ), c );
+        result += colorize( _( "  (further requirements hidden)" ), c ) + "\n";
     }
     return result;
 }

@@ -23,6 +23,62 @@
   },
   {
     "type": "item_group",
+    "id": "gunmod_common_pistol",
+    "//": "Common mods that spawn installed in pistols.",
+    "items": [
+      {
+        "distribution": [
+          { "item": "improve_sights", "prob": 60 },
+          { "item": "rail_laser_sight", "prob": 40 },
+          { "item": "red_dot_sight", "prob": 70 }
+        ],
+        "prob": 40
+      },
+      { "item": "pistol_grip", "prob": 30 },
+      { "item": "match_trigger", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunmod_common_shotgun",
+    "//": "Common mods that spawn installed in shotguns.",
+    "items": [
+      {
+        "distribution": [
+          { "collection": [ { "item": "sights_mount" }, { "item": "improve_sights", "prob": 60 } ] },
+          { "collection": [ { "item": "rail_mount" }, { "item": "rail_laser_sight", "prob": 40 } ] },
+          { "collection": [ { "item": "sights_mount" }, { "item": "red_dot_sight", "prob": 70 } ] }
+        ],
+        "prob": 40
+      },
+      { "distribution": [ { "item": "choke", "prob": 50 }, { "item": "muzzle_brake", "prob": 20 } ], "prob": 40 },
+      { "item": "pistol_grip", "prob": 30 },
+      { "item": "match_trigger", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunmod_common_rifle",
+    "//": "Common mods that spawn installed in rifles.",
+    "items": [
+      {
+        "distribution": [
+          { "item": "improve_sights", "prob": 60 },
+          { "item": "rail_laser_sight", "prob": 40 },
+          { "item": "red_dot_sight", "prob": 70 },
+          { "item": "rifle_scope", "prob": 30 },
+          { "item": "offset_sights", "prob": 40 }
+        ],
+        "prob": 40
+      },
+      { "item": "pistol_grip", "prob": 30 },
+      { "item": "match_trigger", "prob": 20 },
+      { "item": "cheek_pad", "prob": 30 },
+      { "item": "muzzle_brake", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
     "id": "gunmod_rare",
     "//": "Less common gunmods including those only used by police/paramilitary forces.",
     "items": [
@@ -35,6 +91,7 @@
       [ "gun_crossbow", 20 ],
       [ "stabilizer", 10 ],
       [ "laser_sight", 40 ],
+      [ "offset_sight_rail", 50 ],
       [ "light_grip", 50 ],
       [ "pistol_bayonet", 10 ],
       [ "pistol_scope", 10 ],
@@ -56,6 +113,119 @@
       [ "modern_handguard", 20 ],
       [ "bipod_handguard", 10 ],
       [ "high_end_folding_stock", 10 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunmod_rare_pistol",
+    "//": "Rare mods that spawn installed in pistols.",
+    "items": [
+      { "distribution": [ { "item": "pistol_grip", "prob": 30 }, { "item": "light_grip", "prob": 20 } ], "prob": 30 },
+      {
+        "distribution": [
+          { "item": "barrel_ported", "prob": 20 },
+          { "item": "suppressor", "prob": 60 },
+          { "item": "suppressor_compact", "prob": 40 }
+        ],
+        "prob": 20
+      },
+      {
+        "distribution": [ { "item": "pistol_stock", "prob": 10 }, { "item": "tail_hook_stock", "prob": 30 } ],
+        "prob": 10
+      },
+      { "item": "match_trigger", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunmod_rare_shotgun",
+    "//": "Common mods that spawn installed in shotguns.",
+    "items": [
+      {
+        "distribution": [
+          { "collection": [ { "item": "sights_mount" }, { "item": "improve_sights", "prob": 60 } ] },
+          { "collection": [ { "item": "rail_mount" }, { "item": "rail_laser_sight", "prob": 40 } ] },
+          { "collection": [ { "item": "sights_mount" }, { "item": "red_dot_sight", "prob": 70 } ] },
+          { "collection": [ { "item": "rail_mount" }, { "item": "offset_sights", "prob": 40 } ] },
+          {
+            "collection": [
+              {
+                "item": "sights_mount",
+                "collection": [ { "item": "acog_scope" }, { "item": "holo_magnifier", "prob": 30 } ],
+                "prob": 40
+              }
+            ]
+          }
+        ],
+        "prob": 40
+      },
+      {
+        "distribution": [ { "item": "choke", "prob": 50 }, { "item": "muzzle_brake", "prob": 20 }, { "item": "shot_suppressor", "prob": 10 } ],
+        "prob": 40
+      },
+      { "distribution": [ { "item": "pistol_grip", "prob": 30 }, { "item": "light_grip", "prob": 20 } ], "prob": 30 },
+      { "item": "match_trigger", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gunmod_rare_rifle",
+    "//": "Common mods that spawn installed in rifles.",
+    "subtype": "distribution",
+    "items": [
+      {
+        "distribution": [
+          { "item": "improve_sights", "prob": 60 },
+          { "item": "rail_laser_sight", "prob": 40 },
+          { "item": "red_dot_sight", "prob": 70 },
+          { "item": "rifle_scope", "prob": 30 },
+          { "item": "offset_sights", "prob": 40 },
+          { "item": "offset_sight_rail", "prob": 50 },
+          { "colleciton": [ { "item": "acog_scope" }, { "item": "holo_magnifier", "prob": 30 } ] },
+          {
+            "colleciton": [
+              { "item": "hybrid_sight_4x" },
+              { "distribution": [ { "item": "acog_scope", "prob": 40 }, { "item": "holo_scope", "prob": 50 } ] }
+            ]
+          },
+          {
+            "colleciton": [
+              { "item": "rifle_scope_high_end_mount" },
+              { "distribution": [ { "item": "acog_scope", "prob": 40 }, { "item": "holo_scope", "prob": 50 } ] }
+            ]
+          }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "barrel_ported", "prob": 20 },
+          { "item": "suppressor", "prob": 60 },
+          { "item": "suppressor_compact", "prob": 40 },
+          { "item": "muzzle_brake", "prob": 20 }
+        ],
+        "prob": 20
+      },
+      { "distribution": [ { "item": "pistol_grip", "prob": 30 }, { "item": "light_grip", "prob": 20 } ], "prob": 30 },
+      {
+        "distribution": [
+          { "item": "recoil_stock", "prob": 60 },
+          { "item": "folding_stock", "prob": 60 },
+          { "item": "high_end_folding_stock", "prob": 10 }
+        ],
+        "prob": 30
+      },
+      {
+        "distribution": [
+          { "item": "grip", "prob": 80 },
+          { "item": "bipod", "prob": 20 },
+          { "item": "modern_handguard", "prob": 20 },
+          { "item": "bipod_handguard", "prob": 10 },
+          { "item": "u_shotgun", "prob": 20 }
+        ],
+        "prob": 30
+      },
+      { "item": "match_trigger", "prob": 20 },
+      { "item": "cheek_pad", "prob": 30 }
     ]
   },
   {
