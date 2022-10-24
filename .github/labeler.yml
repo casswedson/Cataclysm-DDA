@@ -23,7 +23,7 @@
   - "doxygen_doc/**"
 
 "Code: Tooling":
-  - any ['tools/**', '.github/**', 'utilities/**', '!tools/spell_checker/dictionary.txt']
+  - any: ['tools/**', '.github/**', 'utilities/**', '!tools/spell_checker/dictionary.txt']
 
 "Code: Tests":
   - "tests/**"
