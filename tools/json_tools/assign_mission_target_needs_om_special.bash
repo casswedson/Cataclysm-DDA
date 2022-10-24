@@ -2,11 +2,11 @@
 set -euo pipefail
 
 function Q {
-	find ./data/ \
-		-not -path ./data/fontdata.json \
-		-not -path ./data/mods/replacements.json \
-		-name '*.json' \
-		-exec jq "${@}" {} +
+    find ./data/ \
+        -not -path ./data/fontdata.json \
+        -not -path ./data/mods/replacements.json \
+        -name '*.json' \
+        -exec jq "${@}" {} +
 }
 
 SPECIAL_OF_TERRAIN="$(mktemp --suffix -special-of-terrain.json )"
