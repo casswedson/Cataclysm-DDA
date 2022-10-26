@@ -1,16 +1,16 @@
 version: 1
 labels:
-- label: "Mechanics: Enchantments / Spells"
-  files: ".*spells.*"
+  - label: "Mechanics: Enchantments / Spells"
+    files: ".*spells.*"
 
-- label: "Mods"
-  files: "data/mods/.*"
+  - label: "Mods"
+    files: "data/mods/.*"
 
-- label: "Mods: Xedra Evolved"
-  files: "data/mods/Xedra_Evolved/.*"
+  - label: "Mods: Xedra Evolved"
+    files: "data/mods/Xedra_Evolved/.*"
 
-- label: "[JSON]"
-  files: "*.json"
+  - label: "[JSON]"
+    files: "*.json"
 
 # "[C++]":
 #   - "**/*.cpp"
