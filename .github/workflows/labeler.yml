@@ -6,8 +6,11 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v3
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          # I don't want no bot removing stuff for me
-          sync-labels: ""
+    - uses: srvaroa/labeler@master
+      env:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      # - uses: actions/labeler@v3
+      #   with:
+      #     repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      #     # I don't want no bot removing stuff for me
+      #     sync-labels: ""
