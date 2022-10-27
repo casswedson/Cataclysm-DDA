@@ -24,7 +24,6 @@
 #   Run: make NATIVE=osx OSX_MIN=10.12
 #     It is highly recommended to supply OSX_MIN > 10.11
 #     otherwise optimizations are automatically disabled with -O0
-
 # Build types:
 # Debug (no optimizations)
 #  Default

@@ -1,18 +1,5 @@
 [
   {
-    "type": "trap",
-    "id": "tr_spider",
-    "name": "trapdoor spiderden",
-    "color": "green",
-    "symbol": "#",
-    "visibility": 10,
-    "avoidance": 14,
-    "difficulty": 99,
-    "trap_radius": 4,
-    "action": "spell",
-    "spell_data": { "id": "summon_trapspider" }
-  },
-  {
     "id": "summon_trapspider",
     "type": "SPELL",
     "name": "summon trapdoor spider",

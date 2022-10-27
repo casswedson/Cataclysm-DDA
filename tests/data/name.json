@@ -1,11 +1,6 @@
 [
   {
     "usage": "backer",
-    "gender": "male",
-    "name": "Male Backer"
-  },
-  {
-    "usage": "backer",
     "gender": "female",
     "name": "Female Backer"
   },

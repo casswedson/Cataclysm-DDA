@@ -1,7 +1,6 @@
 #include <iosfwd>
 #include <memory>
 #include <string>
-
 #include "avatar.h"
 #include "cata_catch.h"
 #include "creature_tracker.h"

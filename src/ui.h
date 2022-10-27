@@ -1,7 +1,6 @@
 #pragma once
 #ifndef CATA_SRC_UI_H
 #define CATA_SRC_UI_H
-
 #include <functional>
 #include <initializer_list>
 #include <iosfwd>
