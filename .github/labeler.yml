@@ -1,225 +1,237 @@
-"[C++]":
-  - "**/*.cpp"
-  - "**/*.h"
+- regExp: ".*spells.*"
+  labels: ["Mechanics: Enchantments / Spells"]
 
-"[JSON]":
-  - "**/*.json"
+- regExp: ".*data/mods/.*"
+  labels: ["Mods"]
 
-"[Markdown]":
-  - "**/*.md"
+- regExp: ".*data/mods/xedra_evolved/.*"
+  labels: ["Mods: Xedra Evolved"]
 
-"Game: Achievements / Conducts / Scores":
-  - "**scores**"
-  - "**statistics**"
-  - "**achievements**"
-  - "**conducts**"
+- regExp: ".*\\.json+$"
+  labels: ["[JSON]"]
 
-"[Python]":
-  - "**/*.py"
+# "[C++]":
+#   - "**/*.cpp"
+#   - "**/*.h"
 
-"<Documentation>":
-  - "**/*.md"
-  - "doc/**"
-  - "doxygen_doc/**"
+# "[JSON]":
+#   - "**/*.json"
 
-"Code: Tooling":
-  - ".github/**"
-  - "utilities/**"
-  - any: ['tools/**', '!tools/spell_checker/dictionary.txt']
+# "[Markdown]":
+#   - "**/*.md"
 
-"Code: Tests":
-  - "tests/**"
-  - "data/mods/TEST_DATA/**"
+# "Game: Achievements / Conducts / Scores":
+#   - "**scores**"
+#   - "**statistics**"
+#   - "**achievements**"
+#   - "**conducts**"
 
-"Character / World Generation":
-  - "src/newcharacter.cpp"
-  - "**/worldfactory.*"
+# "[Python]":
+#   - "**/*.py"
 
-"Code: Build":
-  - "build-data/**"
-  - "build-scripts/**"
-  - "**/Makefile"
-  - "**/CMakeLists.txt"
-  - "**/*.cmake"
+# "<Documentation>":
+#   - "**/*.md"
+#   - "doc/**"
+#   - "doxygen_doc/**"
 
-"Code: Infrastructure / Style / Static Analysis":
-  - .astylerc
-  - .clang-tidy
-  - .editorconfig
-  - .lgtm.yml
+# "Code: Tooling":
+#   - ".github/**"
+#   - "utilities/**"
+#   - any: ['tools/**', '!tools/spell_checker/dictionary.txt']
 
-"Crafting / Construction / Recipes":
-  - "**recipes**"
-  - "**construction**"
+# "Code: Tests":
+#   - "tests/**"
+#   - "data/mods/TEST_DATA/**"
 
-"EOC: Effects On Condition":
-  - "**effect_on_condition**"
-  - "**eocs**"
+# "Character / World Generation":
+#   - "src/newcharacter.cpp"
+#   - "**/worldfactory.*"
 
-"Fields / Furniture / Terrain / Traps":
-  - "**furniture**"
+# "Code: Build":
+#   - "build-data/**"
+#   - "build-scripts/**"
+#   - "**/Makefile"
+#   - "**/CMakeLists.txt"
+#   - "**/*.cmake"
 
-"Items: Food / Vitamins":
-  - "**food**"
-  - "**comestibles**"
+# "Code: Infrastructure / Style / Static Analysis":
+#   - .astylerc
+#   - .clang-tidy
+#   - .editorconfig
+#   - .lgtm.yml
 
-"NPC / Factions":
-  - "**npc**"
+# "Crafting / Construction / Recipes":
+#   - "**recipes**"
+#   - "**construction**"
 
-"Melee":
-  - "**melee**"
-  - "**techniques**"
+# "EOC: Effects On Condition":
+#   - "**effect_on_condition**"
+#   - "**eocs**"
 
-"Missions":
-  - "**mission**"
+# "Fields / Furniture / Terrain / Traps":
+#   - "**furniture**"
 
-"Info / User Interface":
-  - "**ui**"
-  - "src/**ui**"
-  - "**widget**"
-  - "src/list_view.*"
-  - "src/surroundings_menu.*"
+# "Items: Food / Vitamins":
+#   - "**food**"
+#   - "**comestibles**"
 
-"Items: Archery":
-  - "**archery**"
-  - "**crossbows**"
+# "NPC / Factions":
+#   - "**npc**"
 
-"Items: Armor / Clothing":
-  - "**armor**"
+# "Melee":
+#   - "**melee**"
+#   - "**techniques**"
 
-"Items: Battery / UPS":
-  - "**battery**"
+# "Missions":
+#   - "**mission**"
 
-"Items: Containers":
-  - "**containers**"
-  - "**storage**"
-  - "**sheath**"
-  - "**holster**"
-  - "**ammo_pouch**"
-  - "**bandolier**"
-  - "src/item_pocket.*"
-  - "src/item_contents.*"
-  - "tests/item_pocket_test.*"
+# "Info / User Interface":
+#   - "**ui**"
+#   - "src/**ui**"
+#   - "**widget**"
+#   - "src/list_view.*"
+#   - "src/surroundings_menu.*"
 
-"Items: Magazines":
-  - "**magazine**"
+# "Items: Archery":
+#   - "**archery**"
+#   - "**crossbows**"
 
-"Appliance/Power Grid":
-  - "**appliance**"
+# "Items: Armor / Clothing":
+#   - "**armor**"
 
-"Monsters":
-  - "**monster**"
+# "Items: Battery / UPS":
+#   - "**battery**"
 
-"Mutations / Traits / Professions/ Hobbies":
-  - "**professions.json"
-  - "**mutation**"
-  - "**hobbies**"
+# "Items: Containers":
+#   - "**containers**"
+#   - "**storage**"
+#   - "**sheath**"
+#   - "**holster**"
+#   - "**ammo_pouch**"
+#   - "**bandolier**"
+#   - "src/item_pocket.*"
+#   - "src/item_contents.*"
+#   - "tests/item_pocket_test.*"
 
-"Lore":
-  - data/json/npcs/BG_trait_groups.json
-  - data/json/npcs/Personality_trait_groups.json
-  - data/json/npcs/personality_traits.json
-  - "**Backgrounds**"
-  - "**snippets**"
+# "Items: Magazines":
+#   - "**magazine**"
 
-"Limbs":
-  - "src/bodypart.*"
-  - "data/json/limb_scores.json"
+# "Appliance/Power Grid":
+#   - "**appliance**"
 
-"Spawn":
-  - "**itemgroups**"
-  - "**monstergroups**"
+# "Monsters":
+#   - "**monster**"
 
-"Bionics":
-  - "**bionics**"
+# "Mutations / Traits / Professions/ Hobbies":
+#   - "**professions.json"
+#   - "**mutation**"
+#   - "**hobbies**"
 
-"Map / Mapgen":
-  - "**mapgen**"
-  - "**mapgen_palettes**"
-  - "**overmap**"
-  - "**overmap**"
+# "Lore":
+#   - data/json/npcs/BG_trait_groups.json
+#   - data/json/npcs/Personality_trait_groups.json
+#   - data/json/npcs/personality_traits.json
+#   - "**Backgrounds**"
+#   - "**snippets**"
 
-"Martial Arts":
-  - "**martialarts**"
+# "Limbs":
+#   - "src/bodypart.*"
+#   - "data/json/limb_scores.json"
 
-"Player Faction Base / Camp":
-  - "**basecamp**"
-  - "src/faction_camp.*"
-  - data/json/mapgen/basecamps/**
+# "Spawn":
+#   - "**itemgroups**"
+#   - "**monstergroups**"
 
-"Items: Ammo / Guns":
-  - "**gun**"
-  - "**ammo**"
+# "Bionics":
+#   - "**bionics**"
 
-"Items: Gunmod / Toolmod":
-  - "**gunmod**"
-  - "**toolmod**"
+# "Map / Mapgen":
+#   - "**mapgen**"
+#   - "**mapgen_palettes**"
+#   - "**overmap**"
+#   - "**overmap**"
 
-"SDL: Tiles / Sound":
-  - gfx/**
-  - sound/**
+# "Martial Arts":
+#   - "**martialarts**"
 
-"Scenarios":
-  - "**scenario**"
-  - "**start_location**"
+# "Player Faction Base / Camp":
+#   - "**basecamp**"
+#   - "src/faction_camp.*"
+#   - data/json/mapgen/basecamps/**
 
-"Translation":
-  - lang/**
-  - "**translation**"
+# "Items: Ammo / Guns":
+#   - "**gun**"
+#   - "**ammo**"
 
-"Mods: Aftershock":
-  - data/mods/Aftershock/**
-  - data/mods/aftershock_exoplanet/**
+# "Items: Gunmod / Toolmod":
+#   - "**gunmod**"
+#   - "**toolmod**"
 
-"Mods: Dark Days of the Dead":
-  - data/mods/classic_zombies/**
+# "SDL: Tiles / Sound":
+#   - gfx/**
+#   - sound/**
 
-"Mods: Dark Skies":
-  - data/mods/Dark-Skies-Above/**
+# "Scenarios":
+#   - "**scenario**"
+#   - "**start_location**"
 
-"Mods: Desert Region":
-  - data/mods/desert_region/**
+# "Translation":
+#   - lang/**
+#   - "**translation**"
 
-"Mods: DinoMod":
-  - data/mods/DinoMod/**
+# "Mods: Aftershock":
+#   - data/mods/Aftershock/**
+#   - data/mods/aftershock_exoplanet/**
 
-"Mods: Generic Guns":
-  - data/mods/Generic_Guns/**
+# "Mods: Dark Days of the Dead":
+#   - data/mods/classic_zombies/**
 
-"Mods: MA":
-  - data/mods/MA/**
+# "Mods: Dark Skies":
+#   - data/mods/Dark-Skies-Above/**
 
-"Mods: MMA":
-  - data/mods/MMA/**
+# "Mods: Desert Region":
+#   - data/mods/desert_region/**
 
-"Mods: Magiclysm":
-  - data/mods/Magiclysm/**
+# "Mods: DinoMod":
+#   - data/mods/DinoMod/**
 
-"Mods: Innawood 🌲":
-  - data/mods/innawood/**
+# "Mods: Generic Guns":
+#   - data/mods/Generic_Guns/**
 
-"Mods: No Hope":
-  - data/mods/No_Hope/**
+# "Mods: MA":
+#   - data/mods/MA/**
 
-"Mods: TropiCataclysm 🌴":
-  - data/mods/TropiCataclysm/**
+# "Mods: MMA":
+#   - data/mods/MMA/**
 
-"Mods: Tamable Wildlife":
-  - data/mods/Tamable_Wildlife/**
+# "Mods: Magiclysm":
+#   - data/mods/Magiclysm/**
 
-"Mods: Xedra Evolved":
-  - data/mods/Xedra_Evolved/**
+# "Mods: Innawood 🌲":
+#   - data/mods/innawood/**
 
-"Mods":
-  - any: [ 'data/mods/**' ]
-    all: [ '!data/mods/TEST_DATA/**' ]
+# "Mods: No Hope":
+#   - data/mods/No_Hope/**
 
-"Mechanics: Enchantments / Spells":
-  - "**enchantments**"
-  - "**spells**"
+# "Mods: TropiCataclysm 🌴":
+#   - data/mods/TropiCataclysm/**
 
-"Mechanics: Weather":
-  - "**weather**"
+# "Mods: Tamable Wildlife":
+#   - data/mods/Tamable_Wildlife/**
 
-"Vehicles":
-  - "**vehicle**"
+# "Mods: Xedra Evolved":
+#   - data/mods/Xedra_Evolved/**
+
+# "Mods":
+#   - any: [ 'data/mods/**' ]
+#     all: [ '!data/mods/TEST_DATA/**' ]
+
+# "Mechanics: Enchantments / Spells":
+#   - "**enchantments**"
+#   - "**spells**"
+
+# "Mechanics: Weather":
+#   - "**weather**"
+
+# "Vehicles":
+#   - "**vehicle**"
