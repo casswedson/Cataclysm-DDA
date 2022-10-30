@@ -68,7 +68,7 @@
   - "**/comestibles**"
 
 "NPC / Factions":
-  - "**/**npc**/**/*"
+  - "/**npc**"
 
 "Melee":
   - "**/melee**"
@@ -78,7 +78,6 @@
   - "**/**mission**"
 
 "Info / User Interface":
-  - "**/ui/**/*"
   - "src/**ui**"
   - "**/widget/**/*"
   - "src/list_view.*"
