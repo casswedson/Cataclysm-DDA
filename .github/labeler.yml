@@ -68,7 +68,7 @@
   - "**/comestibles**"
 
 "NPC / Factions":
-  - "/**npc**"
+  - "**/**npc**"
 
 "Melee":
   - "**/melee**"
