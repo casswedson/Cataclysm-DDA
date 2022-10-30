@@ -22,28 +22,6 @@
     "difficulty": 0
   },
   {
-    "id": "eat_more_dreamdross",
-    "type": "SPELL",
-    "name": "Eat more dreamdross",
-    "description": "You can consume more dreamdross to regain mana in one sitting.",
-    "valid_targets": [ "self" ],
-    "min_damage": 225,
-    "damage_increment": 3.0,
-    "max_damage": 300,
-    "max_level": 35,
-    "effect": "recover_energy",
-    "effect_str": "MANA",
-    "shape": "blast",
-    "skill": "deduction",
-    "spell_class": "EATER",
-    "base_casting_time": 500,
-    "base_energy_cost": 0,
-    "components": "spell_components_dreamdross2",
-    "flags": [ "SILENT", "NO_LEGS" ],
-    "learn_spells": { "eat_dreamdross_ingot": 20 },
-    "difficulty": 1
-  },
-  {
     "id": "eat_dreamdross_ingot",
     "type": "SPELL",
     "name": "Eat dreamdross ingots",

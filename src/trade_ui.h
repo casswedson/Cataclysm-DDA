@@ -102,8 +102,6 @@ class trade_ui
         constexpr static panecont_t::size_type _you = 1;
 
         trade_preset _upreset, _tpreset;
-        panecont_t _panes;
-        values_t _trade_values{};
         parties_t _parties;
         std::queue<event> _queue;
         panecont_t::size_type _cpane = 0;
