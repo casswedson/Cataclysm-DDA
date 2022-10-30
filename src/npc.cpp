@@ -186,15 +186,6 @@ bool job_data::has_job() const
     }
     return false;
 }
-int job_data::get_priority_of_job( const activity_id &req_job ) const
-{
-    auto it = task_priorities.find( req_job );
-    if( it != task_priorities.end() ) {
-        return it->second;
-    } else {
-        return 0;
-    }
-}
 
 std::vector<activity_id> job_data::get_prioritised_vector() const
 {
