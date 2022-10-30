@@ -2,7 +2,6 @@
   {
     "type": "item_group",
     "id": "wall_deconstruction_results",
-    "subtype": "collection",
     "entries": [
       { "item": "rock", "count": [ 0, 4 ] },
       { "item": "wood_panel", "count": [ 0, 2 ] },

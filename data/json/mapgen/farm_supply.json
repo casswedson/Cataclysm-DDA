@@ -2,7 +2,6 @@
   {
     "type": "mapgen",
     "method": "json",
-    "weight": 150,
     "om_terrain": [ [ "farm_supply_1", "farm_supply_2" ], [ "farm_supply_3", "farm_supply_4" ] ],
     "//": "Fully stocked, unlooted variant.",
     "object": {
