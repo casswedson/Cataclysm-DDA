@@ -75,7 +75,8 @@
   - "**/**mission**"
 
 "Info / User Interface":
-  - "**/**ui**"
+  - "src/**ui**"
+  - "**/ui/**"
   - "**/**widget**"
   - "**/**view**"
 
@@ -85,6 +86,7 @@
 
 "Items: Armor / Clothing":
   - "**/**armor**"
+  - "**/armor/**"
 
 "Items: Battery / UPS":
   - "**/**battery**"
@@ -211,7 +213,9 @@
 
 "Mechanics: Enchantments / Spells":
   - "**/**enchantments**"
-  - "**/**spells**"
+  # - "**/**spells**"
+  - "**Spells**"
+  - "**spells**"
 
 "Mechanics: Weather":
   - "**/**weather**"
