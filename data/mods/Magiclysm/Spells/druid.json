@@ -1,7 +1,6 @@
 [
   {
     "id": "druid_veggrasp",
-    "type": "SPELL",
     "name": "Vegetative Grasp",
     "description": "This spell causes roots and vines to burst forth from the ground and grab your foes, slowing them and doing a small amount of damage as they dig in.",
     "valid_targets": [ "hostile", "ground" ],
