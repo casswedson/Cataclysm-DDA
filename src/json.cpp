@@ -39,9 +39,9 @@ static bool is_whitespace( char ch )
 // binary.
 std::string utf32_to_utf8( uint32_t ch )
 {
-    std::array<char, 5> out;
-    char *buf = out.data();
-    static constexpr std::array<unsigned char, 7> utf8FirstByte = {
+std::array<char, 5> out;
+char *buf = out.data();
+static constexpr std::array<unsigned char, 7> utf8FirstByte = {
         0x00, 0x00, 0xC0, 0xE0, 0xF0, 0xF8, 0xFC
     };
     int utf8Bytes;
