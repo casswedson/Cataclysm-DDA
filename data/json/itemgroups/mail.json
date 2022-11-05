@@ -1,8 +1,7 @@
 [
   {
     "id": "mail",
-    "type": "item_group",
-    "subtype": "distribution",
+    "type": "item_group", "subtype": "distribution",
     "entries": [
       { "group": "greeting-cards_with_gifts", "prob": 10 },
       { "item": "letter", "container-item": "envelope", "prob": 20 },
