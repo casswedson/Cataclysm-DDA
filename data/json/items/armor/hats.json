@@ -1,8 +1,7 @@
 [
   {
     "id": "10gal_hat",
-    "repairs_like": "tricorne",
-    "type": "ARMOR",
+    "repairs_like": "tricorne", "type": "ARMOR",
     "name": { "str": "ten-gallon hat" },
     "description": "These may not be the Great Plains, but you can still be the Boss with this high-crowned, wide-brimmed hat.",
     "weight": "410 g",
