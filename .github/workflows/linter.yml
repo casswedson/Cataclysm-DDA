@@ -1,6 +1,8 @@
 name: Code Style Reviewer
 
-on: pull_request_target
+on:
+  pull_request_target:
+  pull_request:
 
 jobs:
   skip-duplicates:
@@ -22,8 +24,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:
+  steps:
     - uses: actions/checkout@v3
+      with:
+        ref: '${{ github.event.pull_request.head.sha }}'
 
     - name: install dependencies
       run: sudo apt-get install astyle
