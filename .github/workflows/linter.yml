@@ -6,7 +6,7 @@ on:
 
 jobs:
   skip-duplicates:
-    if: ${{ github.event_name == "pull_request_target" }}
+    if: ${{ github.event_name == 'pull_request_target' }}
     continue-on-error: true
     runs-on: ubuntu-latest
     # Map a step output to a job output
@@ -21,8 +21,8 @@ jobs:
 
   style-code:
     needs: skip-duplicates
-    if: ${{ needs.skip-duplicates.outputs.should_skip != 'true' && github.event_name == "pull_request_target" }}
-
+    if: ${{ needs.skip-duplicates.outputs.should_skip != 'true' && github.event_name == 'pull_request_target' }}
+    
     runs-on: ubuntu-latest
 
     steps:
