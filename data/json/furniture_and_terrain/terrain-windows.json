@@ -766,8 +766,7 @@
       "result": "t_window_empty",
       "duration": "10 minutes",
       "message": "You finish cutting the metal.",
-      "byproducts": [ { "item": "rebar", "count": [ 1, 8 ] } ]
-    },
+      "byproducts": [ { "item": "rebar", "count": [ 1, 8 ] } ]},
     "flags": [ "TRANSPARENT", "NOITEM", "CONNECT_WITH_WALL", "WINDOW", "PERMEABLE", "SUPPORTS_ROOF", "THIN_OBSTACLE" ],
     "oxytorch": { "result": "t_window_empty", "duration": "9 seconds", "byproducts": [ { "item": "rebar", "count": [ 1, 2 ] } ] },
     "bash": {
