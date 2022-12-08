@@ -64,7 +64,6 @@
       "speed_penalty": 10,
       "volume": 10,
       "fun": -5,
-      "fun_bonus": 2,
       "description_frequency": 20,
       "player_descriptions": [ "You make a skillful routine with the pom poms.", "You move with refinement while using the pom poms." ],
       "npc_descriptions": [ "makes a skillful routine with the pom poms.", "moves with refinement while using the pom poms." ]
