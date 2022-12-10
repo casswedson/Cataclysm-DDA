@@ -395,10 +395,10 @@ const json_flag &json_flag::get( const std::string &id )
 void json_flag::load( const JsonObject &jo, const std::string & )
 {
     // TODO: mark fields as mandatory where appropriate
-    optional( jo, was_loaded, "info", info_ );
-    optional( jo, was_loaded, "conflicts", conflicts_ );
-    optional( jo, was_loaded, "inherit", inherit_, true );
-    optional( jo, was_loaded, "craft_inherit", craft_inherit_, false );
+optional( jo, was_loaded, "info", info_ );
+optional( jo, was_loaded, "conflicts", conflicts_ );
+optional( jo, was_loaded, "inherit", inherit_, true );
+optional( jo, was_loaded, "craft_inherit", craft_inherit_, false );
     optional( jo, was_loaded, "requires_flag", requires_flag_ );
     optional( jo, was_loaded, "taste_mod", taste_mod_ );
     optional( jo, was_loaded, "restriction", restriction_ );
