@@ -36,6 +36,6 @@ jobs:
 
     - name: 'suggester / JSON & C++'
       uses: reviewdog/action-suggester@v1
-      if: ${{ always() }}
+      if: ${{ failure() }}
       with:
         tool_name: 'JSON & C++ formatters'
