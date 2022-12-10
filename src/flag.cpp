@@ -383,10 +383,7 @@ const json_flag &flag_id::obj() const
     return json_flags_all.obj( *this );
 }
 
-json_flag::operator bool() const
-{
-    return id.is_valid();
-}
+json_flag::operator bool() const {return id.is_valid();}
 
 const json_flag &json_flag::get( const std::string &id )
 {
