@@ -1588,6 +1588,9 @@ void ter_t::check() const
             debugmsg( "ter %s has invalid emission %s set", id.c_str(), e.str().c_str() );
         }
     }
+    if( movecost == 1 || movecost < 0 ) {
+        debugmsg( "%s has move_cost %d, but allowed values for terrain are >=2 and 0", id, movecost );
+    }
 }
 
 furn_t::furn_t() : open( furn_str_id::NULL_ID() ), close( furn_str_id::NULL_ID() ) {}
