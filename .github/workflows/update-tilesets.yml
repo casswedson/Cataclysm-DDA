@@ -4,36 +4,41 @@ name: "Pull Tileset Updates"
 on:
   schedule:
     - cron: "0 23 * * sun"
+  workflow_dispatch:
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
 jobs:
-  pull-updates:
-    if: github.repository == 'CleverRaven/Cataclysm-DDA'
+  generate-changelog:
+    # if: github.repository == 'CleverRaven/Cataclysm-DDA'
     runs-on: ubuntu-latest
+    outputs:
+      changelog: ${{ steps.changelog.outputs.pr-body }}
     steps:
-      - name: "Generate PR body/tileset update changelog"
-        id: pr-changelog
+      - id: changelog
         run: |
-          printf '#### Summary\nNone\n\nAutomatic tilesets updates from:\n\n#### https://github.com/I-am-Erk/CDDA-Tilesets\n' >> pr-body
+          printf "#### Summary\nNone\n\nAutomatic tilesets updates from:\n\n#### https://github.com/I-am-Erk/CDDA-Tilesets\n" >> pr-body
           gh release view -R I-am-Erk/CDDA-Tilesets --json body --jq .body >> pr-body
           echo "---" >> pr-body
-          printf '#### https://github.com/pixel-32/CDDA-tileset\n' >> pr-body
+          printf "#### https://github.com/pixel-32/CDDA-tileset\n" >> pr-body
           gh release view -R pixel-32/CDDA-tileset --json body --jq .body >> pr-body
           sed -i "s/## What's Changed/**What's Changed**/g" pr-body
           sed -i "s/## New Contributors/**New Contributors**/g" pr-body
-          sed -i '/Full Changelog/d' pr-body
+          sed -i "/Full Changelog/d" pr-body
+          sed -i "s/@//g" pr-body
 
           CHANGELOG=$(cat pr-body)
           CHANGELOG="${CHANGELOG//'%'/'%25'}"
           CHANGELOG="${CHANGELOG//$'\n'/'%0A'}"
           CHANGELOG="${CHANGELOG//$'\r'/'%0D'}"
-
           echo "pr-body=$CHANGELOG" >> $GITHUB_OUTPUT
-          rm -f pr-body
 
+  pull-updates:
+    runs-on: ubuntu-latest
+    needs: generate-changelog
+    steps:
       - uses: actions/checkout@v3
       - name: "Get current date"
         uses: 1466587594/get-current-time@v2
@@ -60,9 +65,10 @@ jobs:
             Routine tileset updates on ${{ steps.current-date.outputs.formattedTime }}
           committer: casswedson <casswedson@users.noreply.github.com>
           author: casswedson <casswedson@users.noreply.github.com>
-          token: ${{ secrets.TX_PR_CREATOR }}
+          # token: ${{ secrets.TX_PR_CREATOR }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: tileset-updates
           delete-branch: true
           base: master
           title: Routine tileset updates on ${{ steps.current-date.outputs.formattedTime }}
-          body: ${{ steps.pr-changelog.outputs.pr-body }}
+          body: ${{ needs.generate-changelog.outputs.changelog }}
