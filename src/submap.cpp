@@ -69,14 +69,12 @@ static cosmetic_find_result find_cosmetic(
     const std::vector<submap::cosmetic_t> &cosmetics, const point &p, const std::string &type )
 {
     for( size_t i = 0; i < cosmetics.size(); ++i ) {
-        if( cosmetics[i].pos == p && cosmetics[i].type == type ) {
-            return make_result( true, i );
-        }
+        if( cosmetics[i].pos == p && cosmetics[i].type == type ) {return make_result( true, i );}
     }
     return make_result( false, -1 );
 }
 
-bool submap::has_graffiti( const point &p ) const
+bool submap::has_graffiti( const point &p )const
 {
     return find_cosmetic( cosmetics, p, COSMETICS_GRAFFITI ).result;
 }
