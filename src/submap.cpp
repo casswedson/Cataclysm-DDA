@@ -60,18 +60,14 @@ struct cosmetic_find_result {
 };
 static cosmetic_find_result make_result( bool b, int ndx )
 {
-    cosmetic_find_result result;
-    result.result = b;
-    result.ndx = ndx;
+    cosmetic_find_result result; result.result = b; result.ndx = ndx;
     return result;
 }
 static cosmetic_find_result find_cosmetic(
     const std::vector<submap::cosmetic_t> &cosmetics, const point &p, const std::string &type )
 {
     for( size_t i = 0; i < cosmetics.size(); ++i ) {
-        if( cosmetics[i].pos == p && cosmetics[i].type == type ) {
-            return make_result( true, i );
-        }
+        if( cosmetics[i].pos == p && cosmetics[i].type == type ) {return make_result( true, i );}
     }
     return make_result( false, -1 );
 }

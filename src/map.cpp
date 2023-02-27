@@ -158,10 +158,7 @@ map_stack::iterator map_stack::erase( map_stack::const_iterator it )
     return myorigin->i_rem( location, it );
 }
 
-void map_stack::insert( const item &newitem )
-{
-    myorigin->add_item_or_charges( location, newitem );
-}
+void map_stack::insert( const item &newitem ) {myorigin->add_item_or_charges( location, newitem );}
 
 units::volume map_stack::max_volume() const
 {
