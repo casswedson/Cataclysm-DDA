@@ -1,5 +1,4 @@
 version: v1
-
 labels:
   - label: "<Enhancement / Feature>"
     matcher:
