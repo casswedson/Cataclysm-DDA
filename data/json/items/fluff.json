@@ -75,7 +75,8 @@
     "description": "A pair of red and silver pom poms with plastic handles.  Using them will make you start a cheerleading routine.",
     "price": 600,
     "price_postapoc": 20,
-    "material": [ "plastic" ], "volume": "250 ml",
+    "material": [ "plastic" ],
+    "volume": "250 ml",
     "longest_side": "10 cm",
     "flags": [ "SLEEP_IGNORE" ],
     "material_thickness": 0.1
