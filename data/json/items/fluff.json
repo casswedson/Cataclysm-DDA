@@ -281,7 +281,8 @@
     "volume": "5719 ml",
     "price": 4500,
     "price_postapoc": 500,
-    "material": [ "wood" ], "symbol": "?",
+    "material": [ "wood" ],
+    "symbol": "?",
     "color": "brown",
     "flags": [ "NO_REPAIR" ],
     "use_action": [ "PLAY_GAME" ]
