@@ -2,7 +2,8 @@
   {
     "id": "magic_8_ball",
     "type": "GENERIC",
-    "category": "other", "name": { "str": "Magic 8-Ball" },
+    "category": "other",
+    "name": { "str": "Magic 8-Ball" },
     "description": "A fortune-telling device from the 1950s.  The kind of moral support you didn't know you needed.",
     "weight": "40 g",
     "volume": "150 ml",
