@@ -15,7 +15,7 @@ on:
       - '**.c'
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.run_id }}
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 jobs:
@@ -30,6 +30,9 @@ jobs:
         ref: '${{ github.event.pull_request.head.sha }}'
 
     - run: sudo apt-get install astyle
+
+    - run: echo ${{ github.event.issue.number }}
+    - run: echo ${{ github.event.pull_request.number }}
 
     - run: make astyle-fast
     - run: make style-all-json-parallel
