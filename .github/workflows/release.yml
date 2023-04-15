@@ -40,7 +40,7 @@ jobs:
           echo "release_name=Cataclysm-DDA experimental build ${{ steps.get-timestamp.outputs.time }}" >> $GITHUB_OUTPUT
       - uses: actions/checkout@v3
       - run: |
-          gh release create "${{ steps.get-timestamp.outputs.time }}" --generate-notes --prerelease --title "${{ steps.get-timestamp.outputs.release_name }}"
+          gh release create ${{ steps.get-timestamp.outputs.time }} --generate-notes --prerelease --title "${{ steps.get-timestamp.outputs.release_name }}"
 
   builds:
     needs: release
@@ -284,7 +284,7 @@ jobs:
                mv ./app/build/outputs/bundle/experimentalRelease/*.aab ../cdda-${{ matrix.artifact }}-${{ needs.release.outputs.timestamp }}.aab     
           fi
       - run: |
-          gh release upload "cdda-experimental-${{ needs.release.outputs.timestamp }}" "cdda-${{ matrix.artifact}}-${{ needs.release.outputs.timestamp }}.${{ matrix.ext }}"
+          gh release upload cdda-experimental-${{ needs.release.outputs.timestamp }} cdda-${{ matrix.artifact}}-${{ needs.release.outputs.timestamp }}.${{ matrix.ext }}
       - name: Trigger GitHub pages rebuild
         shell: bash
         run: |
