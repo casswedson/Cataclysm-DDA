@@ -38,7 +38,7 @@
       "PATH_AVOID_DANGER_1",
       "STUN_IMMUNE"
     ],
-    "armor": { "bash": 12, "cut": 8, "bullet": 6 }
+    "armor": { "bash": 12, "cut": 8, "bullet": 6, "heat": 12 }
   },
   {
     "id": "mon_riotbot",
@@ -77,7 +77,7 @@
       "PATH_AVOID_DANGER_1",
       "STUN_IMMUNE"
     ],
-    "armor": { "bash": 12, "cut": 8, "bullet": 6 }
+    "armor": { "bash": 12, "cut": 8, "bullet": 6, "heat": 12 }
   },
   {
     "id": "mon_secubot",
@@ -133,7 +133,7 @@
       "DROPS_AMMO",
       "STUN_IMMUNE"
     ],
-    "armor": { "bash": 14, "cut": 14, "bullet": 11 }
+    "armor": { "bash": 14, "cut": 14, "bullet": 11, "heat": 14 }
   },
   {
     "id": "mon_talon_m202a1",
@@ -189,7 +189,7 @@
       "DROPS_AMMO",
       "STUN_IMMUNE"
     ],
-    "armor": { "bash": 14, "cut": 14, "bullet": 11 }
+    "armor": { "bash": 14, "cut": 14, "bullet": 11, "heat": 14 }
   },
   {
     "id": "mon_secubot_america",
@@ -231,7 +231,7 @@
       "corpse_type": "NO_CORPSE"
     },
     "flags": [ "SEES", "HEARS", "ELECTRONIC", "COLDPROOF", "NO_BREATHE", "PATH_AVOID_DANGER_1", "LOUDMOVES", "STUN_IMMUNE" ],
-    "armor": { "bash": 14, "cut": 14, "bullet": 11 }
+    "armor": { "bash": 14, "cut": 14, "bullet": 11, "heat": 14 }
   },
   {
     "id": "mon_skitterbot",
@@ -258,7 +258,7 @@
     "death_drops": { "groups": [ [ "robots", 4 ], [ "skitterbot", 1 ] ] },
     "death_function": { "corpse_type": "BROKEN" },
     "flags": [ "SEES", "HEARS", "GOODHEARING", "ELECTRONIC", "COLDPROOF", "NO_BREATHE", "PATH_AVOID_DANGER_1", "STUN_IMMUNE" ],
-    "armor": { "bash": 12, "cut": 12, "bullet": 10, "electric": 5 }
+    "armor": { "bash": 12, "cut": 12, "bullet": 10, "electric": 5, "heat": 5 }
   },
   {
     "id": "mon_science_bot",
@@ -303,7 +303,7 @@
       "DROPS_AMMO",
       "STUN_IMMUNE"
     ],
-    "armor": { "bash": 12, "cut": 12, "bullet": 10 }
+    "armor": { "bash": 12, "cut": 12, "bullet": 10, "heat": 10 }
   },
   {
     "id": "mon_robofac_prototype",
@@ -343,7 +343,7 @@
       "LOUDMOVES",
       "STUN_IMMUNE"
     ],
-    "armor": { "bash": 15, "cut": 50, "bullet": 40 }
+    "armor": { "bash": 15, "cut": 50, "bullet": 40, "heat": 10 }
   },
   {
     "id": "mon_dispatch",
@@ -387,7 +387,7 @@
       "DROPS_AMMO",
       "STUN_IMMUNE"
     ],
-    "armor": { "bash": 8, "cut": 8, "bullet": 6 }
+    "armor": { "bash": 8, "cut": 8, "bullet": 6, "heat": 10 }
   },
   {
     "id": "mon_dispatch_military",
@@ -431,6 +431,6 @@
       "DROPS_AMMO",
       "STUN_IMMUNE"
     ],
-    "armor": { "bash": 12, "cut": 12, "bullet": 10 }
+    "armor": { "bash": 12, "cut": 12, "bullet": 10, "heat": 12 }
   }
 ]

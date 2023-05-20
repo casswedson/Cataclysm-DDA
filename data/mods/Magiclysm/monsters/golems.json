@@ -80,7 +80,7 @@
     "vision_night": 40,
     "special_attacks": [ { "type": "spell", "spell_data": { "id": "rocket_punch", "min_level": 5 }, "cooldown": 10 } ],
     "death_function": { "corpse_type": "BROKEN" },
-    "flags": [ "SEES", "NO_BREATHE", "ACIDPROOF", "LOUDMOVES" ],
+    "flags": [ "SEES", "NO_BREATHE", "ACIDPROOF", "FIREPROOF", "LOUDMOVES" ],
     "armor": { "bash": 20, "cut": 20, "bullet": 16 }
   },
   {
@@ -109,7 +109,7 @@
     "vision_night": 40,
     "special_attacks": [ { "type": "spell", "spell_data": { "id": "gas_attack", "min_level": 5 }, "cooldown": 60 } ],
     "death_function": { "corpse_type": "BROKEN" },
-    "flags": [ "SEES", "NO_BREATHE", "ACIDPROOF", "LOUDMOVES" ],
+    "flags": [ "SEES", "NO_BREATHE", "ACIDPROOF", "FIREPROOF", "LOUDMOVES" ],
     "armor": { "bash": 32, "cut": 32, "bullet": 26 }
   },
   {
@@ -137,7 +137,7 @@
     "vision_day": 40,
     "vision_night": 40,
     "death_function": { "corpse_type": "BROKEN" },
-    "flags": [ "SEES", "NO_BREATHE", "ACIDPROOF", "LOUDMOVES" ],
+    "flags": [ "SEES", "NO_BREATHE", "ACIDPROOF", "FIREPROOF", "LOUDMOVES" ],
     "armor": { "bash": 15, "cut": 15, "bullet": 12 }
   }
 ]

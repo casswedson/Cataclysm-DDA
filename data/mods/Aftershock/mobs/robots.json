@@ -72,7 +72,7 @@
     "special_attacks": [ [ "CHICKENBOT", 4 ] ],
     "death_function": { "corpse_type": "BROKEN" },
     "flags": [ "SEES", "HEARS", "BASHES", "NO_BREATHE", "ELECTRONIC", "PRIORITIZE_TARGETS", "DROPS_AMMO" ],
-    "armor": { "bash": 18, "cut": 14, "bullet": 11 }
+    "armor": { "bash": 18, "cut": 14, "bullet": 11, "heat": 15 }
   },
   {
     "id": "mon_tankbot",
@@ -113,7 +113,7 @@
       "PRIORITIZE_TARGETS",
       "DROPS_AMMO"
     ],
-    "armor": { "bash": 90, "cut": 90, "bullet": 72 }
+    "armor": { "bash": 90, "cut": 90, "bullet": 72, "heat": 15 }
   },
   {
     "id": "mon_tripod",
@@ -214,7 +214,7 @@
       "PATH_AVOID_DANGER_1",
       "HIT_AND_RUN"
     ],
-    "armor": { "bash": 10, "cut": 20, "bullet": 16 }
+    "armor": { "bash": 10, "cut": 20, "bullet": 16, "heat": 10 }
   },
   {
     "id": "mon_bloodhound_drone",

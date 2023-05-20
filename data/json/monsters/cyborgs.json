@@ -211,7 +211,7 @@
     "harvest": "mon_zomborg",
     "dissect": "dissect_mon_zomborg",
     "upgrades": { "half_life": 43, "into": "mon_zomborg_devourer" },
-    "armor": { "bash": 12, "cut": 28, "bullet": 8 },
+    "armor": { "bash": 12, "cut": 28, "bullet": 8, "heat": 8 },
     "flags": [
       "SEES",
       "HEARS",
@@ -274,6 +274,6 @@
       "PATH_AVOID_DANGER_1",
       "FILTHY"
     ],
-    "armor": { "bash": 12, "cut": 28, "bullet": 8 }
+    "armor": { "bash": 12, "cut": 28, "bullet": 8, "heat": 8 }
   }
 ]

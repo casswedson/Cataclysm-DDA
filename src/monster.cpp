@@ -1604,6 +1604,7 @@ bool monster::is_immune_effect( const efftype_id &effect ) const
     if( effect == effect_onfire ) {
         return is_immune_damage( damage_heat ) ||
                made_of( phase_id::LIQUID ) ||
+               has_flag( MF_FIREPROOF ) ||
                has_flag( MF_FIREY );
     }
 
@@ -1654,10 +1655,6 @@ bool monster::is_immune_damage( const damage_type_id &dt ) const
                 return true;
             }
         }
-    }
-    // FIXME: Hardcoded damage type specific immunities
-    if( dt == damage_heat && ( made_of( material_steel ) || made_of( material_stone ) ) ) {
-        return true;
     }
     if( dt == damage_electric && type->sp_defense == &mdefense::zapback ) {
         return true;

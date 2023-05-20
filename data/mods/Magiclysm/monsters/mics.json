@@ -49,7 +49,7 @@
     "material": [ "steel" ],
     "harvest": "exempt",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
-    "flags": [ "SEES", "HEARS", "NOHEAD", "HARDTOSHOOT", "FLIES", "PRIORITIZE_TARGETS", "NO_BREATHE", "NOGIB" ],
+    "flags": [ "SEES", "HEARS", "NOHEAD", "HARDTOSHOOT", "FLIES", "PRIORITIZE_TARGETS", "NO_BREATHE", "FIREPROOF", "NOGIB" ],
     "armor": { "bash": 15, "cut": 15, "bullet": 15 }
   },
   {
