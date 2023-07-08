@@ -1,0 +1,30 @@
+name: Label First-Time Contributor PRs
+
+on:
+  pull_request_target:
+    types:
+      - opened
+
+jobs:
+  label_first_time_contributor_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check if first-time contributor
+        id: check_contributor
+        uses: actions/first-interaction@v1
+
+      - name: Add 'needs test approval' label
+        if: ${{ steps.check_contributor.outputs.first_interaction == 'false' }}
+        uses: actions/github-script@v6.3.3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const labelToAdd = 'needs test approval';
+
+            github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: [labelToAdd],
+            });
