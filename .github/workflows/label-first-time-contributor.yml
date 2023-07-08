@@ -1,0 +1,44 @@
+name: Label First-Time Contributor PRs
+
+on:
+  pull_request_target:
+    types:
+      - opened
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add 'needs test approval' label
+        uses: actions/github-script@v6.3.3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            // Get a list of all issues created by the PR opener
+            const creator = context.payload.sender.login
+            const opts = github.rest.issues.listForRepo.endpoint.merge({
+              ...context.issue,
+              creator,
+              state: 'all'
+            })
+            const issues = await github.paginate(opts)
+
+            for (const issue of issues) {
+              if (issue.number === context.issue.number) {
+                continue
+              }
+
+              if (issue.pull_request) {
+                return // Creator is already a contributor.
+              }
+            }
+
+            const labelToAdd = 'needs test approval';
+
+            github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: [labelToAdd],
+            });
