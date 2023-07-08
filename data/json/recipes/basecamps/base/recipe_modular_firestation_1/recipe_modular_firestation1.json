@@ -147,7 +147,7 @@
     ],
     "blueprint_excludes": [ { "id": "fbmc_firestation1_fire" } ],
     "blueprint_resources": [ "fake_fireplace", "pot" ],
-    "components": [ [ [ "pot", 1 ], [ "rock_pot", 1 ], [ "pot_copper", 1 ], [ "clay_pot", 1 ] ] ]
+    "components": [ [ [ "pot", 1 ], [ "pot_copper", 1 ], [ "clay_pot", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -172,7 +172,7 @@
     ],
     "blueprint_excludes": [ { "id": "fbmc_firestation1_fire" } ],
     "blueprint_resources": [ "fake_fireplace", "pot" ],
-    "components": [ [ [ "brazier", 1 ] ], [ [ "pot", 1 ], [ "rock_pot", 1 ], [ "pot_copper", 1 ], [ "clay_pot", 1 ] ] ]
+    "components": [ [ [ "brazier", 1 ] ], [ [ "pot", 1 ], [ "pot_copper", 1 ], [ "clay_pot", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -196,7 +196,7 @@
     ],
     "blueprint_excludes": [ { "id": "fbmc_firestation1_fire" } ],
     "blueprint_resources": [ "fake_fireplace", "pot" ],
-    "components": [ [ [ "pot", 1 ], [ "rock_pot", 1 ], [ "pot_copper", 1 ], [ "clay_pot", 1 ] ] ]
+    "components": [ [ [ "pot", 1 ], [ "pot_copper", 1 ], [ "clay_pot", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -289,6 +289,9 @@
     "never_learn": true,
     "construction_blueprint": "fbmc_firestation1_bedroom_sw",
     "blueprint_name": "furnish the SW bedroom",
+    "blueprint_parameter_names": {
+      "fbmc_bed_palette": { "fbmc_straw_bed_palette": "Straw bed", "fbmc_makeshift_bed_palette": "Makeshift bed", "fbmc_bed_palette": "Bed" }
+    },
     "blueprint_requires": [ { "id": "fbmc_firestation1_quarters" } ],
     "blueprint_provides": [ { "id": "fbmc_firestation1_bedroom_sw" }, { "id": "bed" } ],
     "blueprint_excludes": [ { "id": "fbmc_firestation1_bedroom_sw" } ]
@@ -304,6 +307,9 @@
     "never_learn": true,
     "construction_blueprint": "fbmc_firestation1_bedroom_nw",
     "blueprint_name": "furnish the NW bedroom",
+    "blueprint_parameter_names": {
+      "fbmc_bed_palette": { "fbmc_straw_bed_palette": "Straw bed", "fbmc_makeshift_bed_palette": "Makeshift bed", "fbmc_bed_palette": "Bed" }
+    },
     "blueprint_requires": [ { "id": "fbmc_firestation1_quarters" } ],
     "blueprint_provides": [ { "id": "fbmc_firestation1_bedroom_nw" }, { "id": "bed" } ],
     "blueprint_excludes": [ { "id": "fbmc_firestation1_bedroom_nw" } ]
@@ -319,6 +325,9 @@
     "never_learn": true,
     "construction_blueprint": "fbmc_firestation1_bedroom_se",
     "blueprint_name": "furnish the SE bedroom",
+    "blueprint_parameter_names": {
+      "fbmc_bed_palette": { "fbmc_straw_bed_palette": "Straw bed", "fbmc_makeshift_bed_palette": "Makeshift bed", "fbmc_bed_palette": "Bed" }
+    },
     "blueprint_requires": [ { "id": "fbmc_firestation1_quarters" } ],
     "blueprint_provides": [ { "id": "fbmc_firestation1_bedroom_se" }, { "id": "bed" } ],
     "blueprint_excludes": [ { "id": "fbmc_firestation1_bedroom_se" } ]
@@ -334,6 +343,9 @@
     "never_learn": true,
     "construction_blueprint": "fbmc_firestation1_bedroom_ne",
     "blueprint_name": "furnish the NE bedroom",
+    "blueprint_parameter_names": {
+      "fbmc_bed_palette": { "fbmc_straw_bed_palette": "Straw bed", "fbmc_makeshift_bed_palette": "Makeshift bed", "fbmc_bed_palette": "Bed" }
+    },
     "blueprint_requires": [ { "id": "fbmc_firestation1_quarters" } ],
     "blueprint_provides": [ { "id": "fbmc_firestation1_bedroom_ne" }, { "id": "bed" } ],
     "blueprint_excludes": [ { "id": "fbmc_firestation1_bedroom_ne" } ]
