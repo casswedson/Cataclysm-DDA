@@ -33,6 +33,7 @@
     "id": "wallet_full",
     "type": "item_group",
     "subtype": "collection",
+    "on_overflow": "discard",
     "container-item": "wallet",
     "items": [
       { "item": "cash_card", "prob": 100, "charges-min": 0, "charges-max": 50000 },
@@ -49,6 +50,7 @@
     "subtype": "collection",
     "id": "wallet_leather_full",
     "container-item": "wallet_leather",
+    "on_overflow": "discard",
     "//": "copy-from: wallet_full ",
     "items": [
       { "item": "cash_card", "prob": 100, "charges-min": 0, "charges-max": 50000 },
@@ -65,6 +67,7 @@
     "subtype": "collection",
     "id": "wallet_large_full",
     "//": "copy-from: wallet_full ",
+    "on_overflow": "discard",
     "container-item": "wallet_large",
     "items": [
       { "item": "cash_card", "prob": 100, "charges-min": 0, "charges-max": 50000 },
@@ -80,6 +83,7 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "wallet_duct_tape_full",
+    "on_overflow": "discard",
     "container-item": "wallet_duct_tape",
     "items": [
       { "item": "cash_card", "prob": 50, "charges-min": 0, "charges-max": 500 },
@@ -95,6 +99,7 @@
     "id": "wallet_stylish_full",
     "type": "item_group",
     "subtype": "collection",
+    "on_overflow": "discard",
     "container-item": "wallet_stylish",
     "items": [
       { "item": "cash_card", "prob": 100, "charges-min": 10000, "charges-max": 50000 },
@@ -112,6 +117,7 @@
     "subtype": "collection",
     "id": "wallet_military_leather_full",
     "//": "copy-from: wallet_leather_full ",
+    "on_overflow": "discard",
     "container-item": "wallet_leather",
     "items": [
       { "item": "cash_card", "prob": 100, "charges-min": 0, "charges-max": 50000 },
@@ -129,6 +135,7 @@
     "subtype": "collection",
     "id": "wallet_military_full",
     "//": "copy-from: wallet_full ",
+    "on_overflow": "discard",
     "container-item": "wallet",
     "items": [
       { "item": "cash_card", "prob": 100, "charges-min": 0, "charges-max": 50000 },
