@@ -1,6 +1,7 @@
 name: Github pages rebuild
 
 on:
+  workflow_dispatch:
   workflow_run:
     workflows: ["Experimental Release"]
     types: [completed]
@@ -12,7 +13,7 @@ env:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    if: ${{ github.repository == 'CleverRaven/Cataclysm-DDA' && github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Trigger GitHub pages rebuild
         shell: bash
