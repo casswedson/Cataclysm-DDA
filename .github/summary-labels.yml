@@ -23,7 +23,8 @@ labels:
 
   - label: "<Bugfix>"
     matcher:
-      body: ".*([Cc]lose[sd]?|[Ff]ix(es|ed)?|[Rr]esolve[sd]?):?.+#\d+.*"
+      body: ".*([Cc]lose[sd]?|[Ff]ix(es|ed)?|[Rr]esolve[sd]?):?.+#[0-9]+.*"
+
 
   - label: "Code: Performance"
     matcher:
