@@ -8755,6 +8755,8 @@
     "points": 99,
     "valid": false,
     "description": "NPC ignores sounds and does not investigate them.  If you see this, it's is a bug.",
+    "player_display": false,
+    "flags": [ "HIDDEN" ],
     "purifiable": false
   },
   {
@@ -8764,6 +8766,8 @@
     "points": 99,
     "valid": false,
     "description": "NPC will not bash to reach things.  If you see this, it's a bug.",
+    "player_display": false,
+    "flags": [ "HIDDEN" ],
     "purifiable": false
   },
   {
@@ -8773,6 +8777,8 @@
     "points": 99,
     "valid": false,
     "description": "NPC will return to its spawn position on idle.",
+    "player_display": false,
+    "flags": [ "HIDDEN" ],
     "purifiable": false
   },
   {
@@ -8785,6 +8791,8 @@
     "purifiable": false,
     "active": true,
     "starts_active": true,
+    "player_display": false,
+    "flags": [ "HIDDEN" ],
     "processed_eocs": [ "EOC_GIVE_RANDOM_MISSION" ]
   },
   {
@@ -8797,6 +8805,8 @@
     "purifiable": false,
     "active": true,
     "starts_active": true,
+    "player_display": false,
+    "flags": [ "HIDDEN" ],
     "processed_eocs": [ "EOC_GIVE_RANDOM_MISSION" ]
   },
   {

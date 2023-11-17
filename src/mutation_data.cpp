@@ -25,6 +25,7 @@
 #include "translations.h"
 
 static const mutation_category_id mutation_category_ANY( "ANY" );
+static const json_character_flag json_flag_HIDDEN( "HIDDEN" );
 
 static const trait_group::Trait_group_tag Trait_group_EMPTY_GROUP( "EMPTY_GROUP" );
 
@@ -819,7 +820,7 @@ void mutation_branch::check_consistency()
         }
 
         // We need to display active mutations in the UI.
-        if( mdata.activated && !mdata.player_display ) {
+        if( mdata.activated && !mdata.player_display && mdata.flags.count( json_flag_HIDDEN ) ) {
             debugmsg( "mutation %s is not displayed but set as active" );
         }
 
