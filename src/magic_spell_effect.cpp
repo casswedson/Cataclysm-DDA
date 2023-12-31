@@ -1118,7 +1118,7 @@ void spell_effect::spawn_ethereal_item( const spell &sp, Creature &caster, const
         } else if( player_character.can_wear( it ).success() ) {
             it.set_flag( json_flag_FIT );
             player_character.wear_item( it, false );
-        } else if (it->made_of( LIQUID ) ) {
+        } else if (it->made_of( phase_is::LIQUID ) ) {
             liquid_handler::consume_liquid( std::move( granted ), 1 );
         } else if( !player_character.has_wield_conflicts( it ) &&
                    !player_character.martial_arts_data->keep_hands_free && //No wield if hands free
