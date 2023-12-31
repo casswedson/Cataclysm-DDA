@@ -174,6 +174,25 @@
     "max_duration": 1000000,
     "duration_increment": 45000
   },
+{
+    "id": "test_spell_make_water",
+    "type": "SPELL",
+    "name": "Summon Water",
+    "description": "Create water form the surrounding air moisture.",
+    "effect": "spawn_item",
+    "effect_str": "water",
+    "shape": "blast",
+    "valid_targets": [ "self" ],
+    "flags": [ "PERMANENT" ],
+    "difficulty": 1,
+    "max_level": 1,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 1,
+    "base_casting_time": 100,
+    "base_energy_cost": 100,
+    "energy_source": "MANA"
+  },
   {
     "id": "recover_bionic_power",
     "type": "SPELL",
