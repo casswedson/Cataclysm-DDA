@@ -17,6 +17,7 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <debug.h>
 #if defined(_WIN32)
 #include "platform_win.h"
 #else
@@ -342,6 +343,14 @@ cli_opts parse_commandline( int argc, const char **argv )
                     result.noverify = true;
                     return 0;
                 }
+            },
+            {
+                "--game_report", {},
+                "Generate a game report",
+                section_default,
+                0,
+                std::string report = game_info::game_report();
+                std::cout << report << std::endl;
             },
             {
                 "--world", "<name>",
