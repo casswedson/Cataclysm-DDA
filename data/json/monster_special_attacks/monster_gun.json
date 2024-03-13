@@ -20,7 +20,7 @@
     ],
     "skill": "pistol",
     "ammo": [ "barb" ],
-    "clip_size": 1,
+    "clip_size": 10,
     "weight": "540 g",
     "volume": "750 ml",
     "longest_side": "25 cm",
