@@ -22,7 +22,8 @@ jobs:
     name: Warn and label
     steps:
       - uses: actions/checkout@v4
-        fetch-depth: 2
+        with:
+          fetch-depth: 2
 
       - name: calculate changes
         id: lines_changed
