@@ -1269,63 +1269,6 @@ static void change_spells( Character &character )
     }
 }
 
-static void spawn_artifact()
-{
-    map &here = get_map();
-    uilist relic_menu;
-    std::vector<relic_procgen_id> relic_list;
-    for( const relic_procgen_data &elem : relic_procgen_data::get_all() ) {
-        relic_list.emplace_back( elem.id );
-    }
-    relic_menu.text = _( "Choose artifact data:" );
-    std::sort( relic_list.begin(), relic_list.end(), localized_compare );
-    int menu_ind = 0;
-    for( auto &elem : relic_list ) {
-        relic_menu.addentry( menu_ind, true, MENU_AUTOASSIGN, elem.c_str() );
-        ++menu_ind;
-    }
-    relic_menu.query();
-    int artifact_max_attributes;
-    int artifact_power_level;
-    bool artifact_is_resonant = false;
-    int artifact_max_negative_value;
-    if( relic_menu.ret >= 0 && relic_menu.ret < static_cast<int>( relic_list.size() ) ) {
-        if( query_int( artifact_max_attributes, _( "Enter max attributes:" ) )
-            && query_int( artifact_power_level, _( "Enter power level:" ) )
-            && query_int( artifact_max_negative_value, _( "Enter negative power limit:" ) ) ) {
-            if( const std::optional<tripoint> center = g->look_around() ) {
-                if( query_yn( _( "Is the artifact resonant?" ) ) ) {
-                    artifact_is_resonant = true;
-                }
-                here.spawn_artifact( *center, relic_list[relic_menu.ret], artifact_max_attributes,
-                                     artifact_power_level, artifact_max_negative_value, artifact_is_resonant );
-            }
-        }
-    }
-}
-
-static void teleport_short()
-{
-    const std::optional<tripoint> where = g->look_around();
-    const Character &player_character = get_player_character();
-    if( !where || *where == player_character.pos() ) {
-        return;
-    }
-    g->place_player( *where );
-    const tripoint new_pos( player_character.pos() );
-    add_msg( _( "You teleport to point %s." ), new_pos.to_string() );
-}
-
-static void teleport_long()
-{
-    const tripoint_abs_omt where( ui::omap::choose_point( true ) );
-    if( where == overmap::invalid_tripoint ) {
-        return;
-    }
-    g->place_player_overmap( where );
-    add_msg( _( "You teleport to submap %s." ), where.to_string() );
-}
-
 static void teleport_overmap( bool specific_coordinates = false )
 {
     Character &player_character = get_player_character();
@@ -1335,14 +1278,14 @@ static void teleport_overmap( bool specific_coordinates = false )
                                  .title( _( "Teleport where?" ) )
                                  .width( 20 )
                                  .query_string();
-        if( text.empty() ) {
-            return;
-        }
         const std::vector<std::string> coord_strings = string_split( text, ',' );
         if( coord_strings.size() < 2 || coord_strings.size() > 3 ) {
             popup( _( "Error interpreting teleport target: "
                       "expected two or three comma-separated values; got %zu" ),
                    coord_strings.size() );
+            return;
+        }
+        if( text.empty() ) {
             return;
         }
         std::vector<int> coord_ints;
@@ -1354,6 +1297,9 @@ static void teleport_overmap( bool specific_coordinates = false )
             }
             coord_ints.push_back( parsed_coord.value() );
         }
+        if( text.empty() ) {
+            return;
+        }
         cata_assert( coord_ints.size() >= 2 );
         tripoint coord;
         coord.x = coord_ints[0];
@@ -1363,6 +1309,9 @@ static void teleport_overmap( bool specific_coordinates = false )
     } else {
         const std::optional<tripoint> dir_ = choose_direction( _( "Where is the desired overmap?" ) );
         if( !dir_ ) {
+            return;
+        }
+        if( text.empty() ) {
             return;
         }
         const tripoint offset = tripoint( OMAPX * dir_->x, OMAPY * dir_->y, dir_->z );
@@ -1391,7 +1340,15 @@ static void teleport_city()
         g->place_player_overmap( where );
     }
 }
-
+static void spawn_artifact()
+{
+    map &here = get_map();
+    uilist relic_menu;
+    std::vector<relic_procgen_id> relic_list;
+    for( const relic_procgen_data &elem : relic_procgen_data::get_all() ) {
+        relic_list.emplace_back( elem.id );
+    }
+    relic_menu.text = _( "Choose artifact data:" );
 static void spawn_nested_mapgen()
 {
     uilist nest_menu;
